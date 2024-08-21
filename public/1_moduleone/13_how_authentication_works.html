@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.133.0">
+    <meta name="description" content="AWS Modernization Workshop">
+<meta name="author" content="James Bland">
+
+    <link rel="icon" href="https://awsmedia.s3.amazonaws.com/favicon.ico" type="image/x-icon" />
+
+    <title>How authentication works :: English</title>
+
+    
+    <link href="/css/nucleus.css?1724250135" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724250135" rel="stylesheet">
+    <link href="/css/hybrid.css?1724250135" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724250135" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724250135" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724250135" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724250135" rel="stylesheet">
+    <link href="/css/theme.css?1724250135" rel="stylesheet">
+    <link href="/css/tabs.css?1724250135" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724250135" rel="stylesheet">
+    
+    <link href="/css/theme-mine.css?1724250135" rel="stylesheet">
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/1_moduleone/13_how_authentication_works.html">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="50%" style="padding:20px 0px;"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg></a>
+  
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1724250135"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724250135"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1724250135"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1_moduleone.html" title="Introduction" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/1_moduleone.html">
+          Introduction
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1_moduleone/11_introduction_cognito.html" title="Introduction to Cognito" class="dd-item ">
+        <a href="/1_moduleone/11_introduction_cognito.html">
+        Introduction to Cognito
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1_moduleone/12_why_use_cognito.html" title="Why use Cognito" class="dd-item ">
+        <a href="/1_moduleone/12_why_use_cognito.html">
+        Why use Cognito
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1_moduleone/13_how_authentication_works.html" title="How authentication works" class="dd-item active">
+        <a href="/1_moduleone/13_how_authentication_works.html">
+        How authentication works
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1_moduleone/14_workshopprerequisites.html" title="Prerequisites" class="dd-item ">
+        <a href="/1_moduleone/14_workshopprerequisites.html">
+        Prerequisites
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2_lab_1_user_pool_api_authentication.html" title="Lab 1 - User Pool API Authentication" class="dd-item
+        
+        
+        
+        ">
+      <a href="/2_lab_1_user_pool_api_authentication.html">
+          Lab 1 - User Pool API Authentication
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create User Pool" class="dd-item ">
+        <a href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html">
+        Create User Pool
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html" title="User Pool Configuration" class="dd-item ">
+        <a href="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html">
+        User Pool Configuration
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html" title="Explore OpenID Config and Hosted UI" class="dd-item ">
+        <a href="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html">
+        Explore OpenID Config and Hosted UI
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html" title="Restricting Api Access" class="dd-item ">
+        <a href="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html">
+        Restricting Api Access
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html" title="Nextjs App With NextAuth" class="dd-item ">
+        <a href="/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html">
+        Nextjs App With NextAuth
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/27_social_login.html" title="Third Party Identity Provider" class="dd-item ">
+        <a href="/2_lab_1_user_pool_api_authentication/27_social_login.html">
+        Third Party Identity Provider
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3_modulethree.html" title="Partner Setup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/3_modulethree.html">
+          Partner Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/3_modulethree/31_partnersetup.html" title="Partner Setup Instructions" class="dd-item ">
+        <a href="/3_modulethree/31_partnersetup.html">
+        Partner Setup Instructions
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4_modulefour.html" title="Hugo Framework and Markdown" class="dd-item
+        
+        
+        
+        ">
+      <a href="/4_modulefour.html">
+          Hugo Framework and Markdown
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://awsworkshop.io"><i class='fas fa-graduation-cap'></i> Modernization Workshops</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://aws.amazon.com/builders-library/"><i class='fas fa-tools'></i> AWS Builders Library</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://aws.amazon.com/blogs/modernizing-with-aws/"><i class='far fa-lightbulb'></i> Modernization with AWS</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://eksworkshop.com/"><i class='fas fa-chalkboard-teacher'></i> EKS Workshop</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://ecsworkshop.com/"><i class='fas fa-chalkboard-teacher'></i> ECS Workshop</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="https://www.appmeshworkshop.com/"><i class='fas fa-chalkboard-teacher'></i> App Mesh Workshop</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+
+    <a href="https://aws.amazon.com/privacy/?nc1=f_pr">Privacy</a> | <a
+        href="https://aws.amazon.com/terms/?nc1=f_pr">Site Terms</a> | <a
+        href="https://modernization-workshop-bucket.s3-us-west-2.amazonaws.com/license/cc-license.html">CC BY-SA 4.0</a>
+
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Authentication with AWS Cognito</a> > <a href='/1_moduleone.html'>Introduction</a> > How authentication works
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+<h1 id="how-authentication-works-with-amazon-cognito-user-pools-and-identity-pools">How authentication works with Amazon Cognito user pools and identity pools</h1>
+<p>When your customer signs in to an Amazon Cognito user pool, your application receives JSON web tokens (JWTs).</p>
+<p>When your customer signs in to an identity pool, either with a user pool token or another provider, your application receives temporary AWS credentials.</p>
+<p>With user pool sign-in, you can implement authentication and authorization entirely with an AWS SDK. If you don&rsquo;t want to build your own user interface (UI) components, you can invoke a prebuilt web UI (the hosted UI) or the sign-in page for your third-party identity provider (IdP).</p>
+<h2 id="user-pool-api-authentication-and-authorization-with-an-aws-sdk">User pool API authentication and authorization with an AWS SDK</h2>
+<p><img alt="User pool API Authentication" src="/images/05-authentication-api.png"></p>
+<h4 id="api-authentication-flow">API authentication flow</h4>
+<ol>
+<li>A user accesses your application.</li>
+<li>They select a &ldquo;Sign in&rdquo; link.</li>
+<li>They enter their username and password.</li>
+<li>The application invokes the method that makes an InitiateAuth API request. The request passes the user&rsquo;s credentials to a user pool.</li>
+<li>The user pool validates the user&rsquo;s credentials and determines that the user has activated multi-factor authentication (MFA).</li>
+<li>The user pool responds with a challenge that requests an MFA code.</li>
+<li>The application generates a prompt that collects the MFA code from the user.</li>
+<li>The application invokes the method that makes a RespondToAuthChallenge API request. The request passes the user&rsquo;s MFA code.</li>
+<li>The user pool validates the user&rsquo;s MFA code.</li>
+<li>The user pool responds with the user&rsquo;s JWTs.</li>
+<li>The application decodes, validates, and stores or caches the user&rsquo;s JWTs.</li>
+<li>The application displays the requested access-controlled component.</li>
+<li>The user views their content.</li>
+<li>Later, the user&rsquo;s access token has expired, and they request to view an access-controlled component.</li>
+<li>The application determines that the user&rsquo;s session should persist. It invokes the InitiateAuth method again with the refresh token and retrieves new tokens.</li>
+</ol>
+<h2 id="user-pool-authentication-with-the-hosted-ui">User pool authentication with the hosted UI</h2>
+<p><img alt="User pool Hosted UI" src="/images/06-authentication-hosted-ui.png"></p>
+<h4 id="hosted-ui-authentication-flow">Hosted UI authentication flow</h4>
+<ol>
+<li>A user accesses your application.</li>
+<li>They select a &ldquo;Sign in&rdquo; link.</li>
+<li>The application directs the user to a hosted UI sign-in prompt.</li>
+<li>They enter their username and password.</li>
+<li>The user pool validates the user&rsquo;s credentials and determines that the user has activated multi-factor authentication (MFA).</li>
+<li>The hosted UI prompts the user to enter an MFA code.</li>
+<li>The user enters their MFA code.</li>
+<li>The hosted UI redirects the user to the application.</li>
+<li>The application collects the authorization code from the URL request parameter that the hosted UI appended to the callback URL.</li>
+<li>The application requests tokens with the authorization code.</li>
+<li>The token endpoint returns JWTs to the application.</li>
+<li>The application decodes, validates, and stores or caches the user&rsquo;s JWTs.</li>
+<li>The application displays the requested access-controlled component.</li>
+<li>The user views their content.</li>
+<li>Later, the user&rsquo;s access token has expired, and they request to view an access-controlled component.</li>
+<li>The application determines that the user&rsquo;s session should persist. It requests new tokens from the token endpoint with the refresh token.</li>
+</ol>
+<h2 id="user-pool-authentication-with-a-third-party-identity-provider">User pool authentication with a third-party identity provider</h2>
+<p><img alt="User pool Authentication federated" src="/images/07-authentication-federated.png"></p>
+<h4 id="federated-authentication-flow">Federated authentication flow</h4>
+<ol>
+<li>A user accesses your application.</li>
+<li>They select a &ldquo;Sign in&rdquo; link.</li>
+<li>The application directs the user to a sign-in prompt with their IdP.</li>
+<li>They enter their username and password.</li>
+<li>The IdP validates the user&rsquo;s credentials and determines that the user has activated multi-factor authentication (MFA).</li>
+<li>The IdP prompts the user to enter an MFA code.</li>
+<li>The user enters their MFA code.</li>
+<li>The IdP redirects the user to the user pool with a SAML response or an authorization code.</li>
+<li>If the user passed an authorization code, the user pool silently exchanges the code for IdP tokens. The user pool validates the IdP tokens and redirects the user to the application with a new authorization code.</li>
+<li>The application collects the authorization code from the URL request parameter that the user pool appended to the callback URL.</li>
+<li>The application requests tokens with the authorization code.</li>
+<li>The token endpoint returns JWTs to the application.</li>
+<li>The application decodes, validates, and stores or caches the user&rsquo;s JWTs.</li>
+<li>The application displays the requested access-controlled component.</li>
+<li>The user views their content.</li>
+<li>Later, the user&rsquo;s access token has expired, and they request to view an access-controlled component.</li>
+<li>The application determines that the user&rsquo;s session should persist. It requests new tokens from the token endpoint with the refresh token.</li>
+</ol>
+<h2 id="identity-pool-authentication">Identity pool authentication</h2>
+<p><img alt="User pool Authentication federated" src="/images/08-authentication-identity-pool.png"></p>
+<h4 id="federated-authentication-flow-1">Federated authentication flow</h4>
+<ol>
+<li>A user accesses your application.</li>
+<li>They select a &ldquo;Sign in&rdquo; link.</li>
+<li>The application directs the user to a sign-in prompt with their IdP.</li>
+<li>They enter their username and password.</li>
+<li>The IdP validates the user&rsquo;s credentials.</li>
+<li>The IdP redirects the user to the application with a SAML response or an authorization code.</li>
+<li>If the user passed an authorization code, the application exchanges the code for IdP tokens.</li>
+<li>The application decodes, validates, and stores or caches the user&rsquo;s JWTs or assertion.</li>
+<li>The application invokes the method that makes a GetId API request. It passes the user&rsquo;s token or assertion and requests an identity ID.</li>
+<li>The identity pool validates the token or assertion against configured identity providers.</li>
+<li>The identity pool returns an identity ID.</li>
+<li>The application invokes the method that makes a GetCredentialsForIdentity API request. It passes the user&rsquo;s token or assertions and requests an IAM role.</li>
+<li>The identity pool generates a new JWT. The new JWT contains claims that request an IAM role. The identity pool determines the role based on the user&rsquo;s request and the role-selection criteria in the identity pool configuration for the IdP.</li>
+<li>AWS Security Token Service (AWS STS) responds to the AssumeRoleWithWebIdentity request from the identity pool. The response contains API credentials for a temporary session with an IAM role.</li>
+<li>The application stores the session credentials.</li>
+<li>The user takes an action in the app that requires access-protected resources in AWS.</li>
+<li>The application applies the temporary credentials as signatures to API requests for the required AWS services.</li>
+<li>IAM evaluates the policies attached to the role in the credentials. It compares them to the request.</li>
+<li>The AWS service returns the requested data.</li>
+<li>The application renders the data in the user&rsquo;s interface.</li>
+<li>The user views the data.</li>
+</ol>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+            </div> 
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/1_moduleone/12_why_use_cognito.html" title="Why use Cognito"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/1_moduleone/14_workshopprerequisites.html" title="Prerequisites" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1724250135"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724250135"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724250135"></script>
+    <script src="/js/jquery.sticky.js?1724250135"></script>
+    <script src="/js/featherlight.min.js?1724250135"></script>
+    <script src="/js/highlight.pack.js?1724250135"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724250135"></script>
+    <script src="/js/learn.js?1724250135"></script>
+    <script src="/js/hugo-learn.js?1724250135"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1724250135"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

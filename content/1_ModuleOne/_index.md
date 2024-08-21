@@ -6,33 +6,44 @@ weight: 1
 
 # Introduction
 
-## Learning Objectives <!-- MODIFY THIS SUBHEADING -->
+## What you'll be building
+Implementing Authentication in a Next.js 14 Application with AWS Cognito and NextAuth Integration
 
-This paragraph block should highlight the learning objectives of the workshop. A bulleted list works well for this purpose.
+When building a Next.js 14 application, implementing robust authentication is crucial for securing user data and managing access to various parts of your application. By integrating AWS Cognito with the NextAuth library, you can create a seamless sign-in/sign-up experience that leverages AWS's secure and scalable user authentication service.
 
-## Workshop Structure <!-- MODIFY THIS SUBHEADING -->
-This paragraph block should be utilized to briefly explain the submodules that are going to be presented as well as the approximate total time for the workshop and individual submodules. <br>
+In this workshop, we’ll walk through how to set up Cognito for a simple web app. We’ll perform these steps:
 
-For example:
-<ul>
-    <li> Prerequisites *(15 minutes)* </li>
-    <li> Setting up an account for the solution *(15 minutes)* </li>
-    <li> Module 1: Module 1 Title *(30 minutes)* </li>
-    <li> Module 2: Module 2 Title *(30 minutes)* </li>
-    <li> Module 3: Module 3 Title *(30 minutes)* </li>
-</ul>
+- Create a Cogni1to user pool
+- Add sign-up and sign-in pages
+- Assign IAM roles to authenticated users
+- Access AWS resources from the app
+<!-- - Verify email addresses and phone numbers -->
 
-{{% notice info %}}
-<p style='text-align: left;'>
-**REMOVE:** With the exception of _index.md, the module folders and filenames should be changed to better reflect their content, i.e. 1_Planning as the folder and 11_HowToBegin as the first submodule. Changing the "weight" value of the header is ultimately what reflects the order the modules are presented.
-</p>
-{{% /notice %}}
+This workshop should take you anywhere between 1 to 4 hours to complete.
 
-**REMOVE:** Every introduction page should include the following warning label.
+## What you will learn
+
+During this workshop you use multiple AWS services including:
+
+- Amazon Cognito
+- Amazon Amplify
+- Amazon API Gateway
+<!-- - Amazon Verified Permissions
+- AWS Lambda
+- Amazon Simple Storage Service (Amazon S3)
+- AWS Command Line Interface (AWS CLI)
+- AWS Cloud Development Kit (AWS CDK)
+- AWS Amplify Hosting
+- Amazon CloudWatch Logs and AWS X-Ray -->
+
+
+## TOC <!-- MODIFY THIS SUBHEADING -->
+
+- Getting Started
+- Setting up AWS Cognito
+- Implement sign-up and sign-in page
+- Implement access AWS resources from the app
 
 {{% notice warning %}}
 The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
 {{% /notice %}}
-
-### Next Section Heading <!-- MODIFY THIS HEADING -->
-This paragraph block can optionally be utilized to lead into the next section of the workshop.

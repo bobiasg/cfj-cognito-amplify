@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup and Explore on English</title>
+    <link>//localhost:1313/2_lab_1_user_pool_api_authentication/2.1_setup_and_explore.html</link>
+    <description>Recent content in Setup and Explore on English</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/2_lab_1_user_pool_api_authentication/2.1_setup_and_explore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create Next JS App</title>
+      <link>//localhost:1313/2_lab_1_user_pool_api_authentication/2.1_setup_and_explore/2.1.1_create_nextjs_app.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2_lab_1_user_pool_api_authentication/2.1_setup_and_explore/2.1.1_create_nextjs_app.html</guid>
+      <description>Create Next JS App Submodule One Heading This paragraph block can be used to explain how to setup an AWS account. Example content guidance can be found at the bottom of the page.&#xA;Next Section Heading This paragraph block can optionally be utilized to lead into the next section of the workshop.&#xA;Example Content Guidance Setting up your AWS account If you don’t already have an AWS account with Administrator access: create one now by clicking here.</description>
+    </item>
+  </channel>
+</rss>
