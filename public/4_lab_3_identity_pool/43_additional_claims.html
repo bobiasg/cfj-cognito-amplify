@@ -9,21 +9,21 @@
 
     <link rel="icon" href="https://awsmedia.s3.amazonaws.com/favicon.ico" type="image/x-icon" />
 
-    <title>User Pool Configuration :: English</title>
+    <title>Enrich user token with additional claims :: English</title>
 
     
-    <link href="/css/nucleus.css?1724307071" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724307071" rel="stylesheet">
-    <link href="/css/hybrid.css?1724307071" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724307071" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724307071" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724307071" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724307071" rel="stylesheet">
-    <link href="/css/theme.css?1724307071" rel="stylesheet">
-    <link href="/css/tabs.css?1724307071" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724307071" rel="stylesheet">
+    <link href="/css/nucleus.css?1724346225" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724346225" rel="stylesheet">
+    <link href="/css/hybrid.css?1724346225" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724346225" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724346225" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724346225" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724346225" rel="stylesheet">
+    <link href="/css/theme.css?1724346225" rel="stylesheet">
+    <link href="/css/tabs.css?1724346225" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724346225" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1724307071" rel="stylesheet">
+    <link href="/css/theme-mine.css?1724346225" rel="stylesheet">
     
     
 
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html">
+  <body class="" data-url="/4_lab_3_identity_pool/43_additional_claims.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724307071"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724307071"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724346225"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724346225"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724307071"></script>
+<script type="text/javascript" src="/js/search.js?1724346225"></script>
 
     
   </div>
@@ -210,7 +210,7 @@
   
     
     <li data-nav-id="/2_lab_1_user_pool_api_authentication.html" title="Lab 1 - User Pool API Authentication" class="dd-item
-        parent
+        
         
         
         ">
@@ -259,7 +259,7 @@
  
   
     
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html" title="User Pool Configuration" class="dd-item active">
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html" title="User Pool Configuration" class="dd-item ">
         <a href="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html">
         User Pool Configuration
         <i class="fas fa-check read-icon"></i>
@@ -471,7 +471,7 @@
   
     
     <li data-nav-id="/4_lab_3_identity_pool.html" title="Lab 3 - Identity Pool" class="dd-item
-        
+        parent
         
         
         ">
@@ -502,6 +502,48 @@
       <li data-nav-id="/4_lab_3_identity_pool/41_create_identity_pool.html" title="Create Identity Pool" class="dd-item ">
         <a href="/4_lab_3_identity_pool/41_create_identity_pool.html">
         Create Identity Pool
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/42_access_s3_nextjs.html" title="Access S3 in NextJS" class="dd-item ">
+        <a href="/4_lab_3_identity_pool/42_access_s3_nextjs.html">
+        Access S3 in NextJS
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/43_additional_claims.html" title="Enrich user token with additional claims" class="dd-item active">
+        <a href="/4_lab_3_identity_pool/43_additional_claims.html">
+        Enrich user token with additional claims
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -612,7 +654,7 @@
             
           
           
-            <a href='/'>Authentication with AWS Cognito</a> > <a href='/2_lab_1_user_pool_api_authentication.html'>Lab 1 - User Pool API Authentication</a> > User Pool Configuration
+            <a href='/'>Authentication with AWS Cognito</a> > <a href='/4_lab_3_identity_pool.html'>Lab 3 - Identity Pool</a> > Enrich user token with additional claims
           
         
           
@@ -638,43 +680,75 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h1 id="resouce-server">Resouce Server</h1>
-<p>We are now ready to further configure our user pool, we will begin by adding a resource server. As this lab will grant access to a Mock API at this stage we will create the resource and scope that will provide authenticated access to the get method of the API.</p>
-<p>Select the App Integration tab and click on Create resource server
-<img alt="User Pool Configuration" src="/images/19-user-pool-configuration-01.png"></p>
-<p>Next we will enter as above the Resource server name, server identifier and Scope name then select Create resource server.
-<img alt="User Pool Configuration" src="/images/20-user-pool-configuration-02.png"></p>
-<h1 id="app-client-settings">App Client Settings</h1>
-<p>We will now configure the call back URLs, OAuth flows and OAuth scopes.</p>
-<p>Scroll down while still in the App integration tab to App client list and click on cfj-client”
-<img alt="User Pool Configuration" src="/images/21-user-pool-configuration-03.png"></p>
-<p>Then under Hosted UI select Edit
-<img alt="User Pool Configuration" src="/images/22-user-pool-configuration-04.png"></p>
-<p>There are a number of options to enable, ensure yours look the same as the image.</p>
-<p>First we add the Allowed sign-out URL to https://localhost</p>
-<p>Under OAuth 2.0 Grant Types select</p>
-<ul>
-<li>Authorization code grant and</li>
-<li>Implicit grant</li>
-</ul>
-
-<div class="notices note" ><p>The implicit grant flow exposes OAuth tokens in the url. Although we are using it here for testing purposes only, we strongly reocmmend you only use the authroization code flow with PKCE for public clients.</p>
-</div>
-
-<p>Under OpenID Connect Scopes select</p>
-<ul>
-<li>OpenID</li>
-<li>Profile</li>
-<li>Email</li>
-</ul>
-<p>Under Custom Scopes select</p>
-<ul>
-<li>cfj-01/read</li>
-</ul>
-<p>Finally click Save changes</p>
-<p><img alt="User Pool Configuration" src="/images/23-user-pool-configuration-05.png"></p>
+<h1 id="enrich-user-token-with-additional-claims----modify-this-heading---">Enrich user token with additional claims <!-- raw HTML omitted --></h1>
+<h2 id="add-claim-with-lambda">Add Claim with Lambda</h2>
+<p>In this activity, we will enrich users token with additional claims using Pre Token Generation lambda trigger. This trigger will add “department” claim to the token as users sign-in. In real-world scenario, this could be based on a backend check to verify user’s department or it could be a custom claim in user’s profile that can be only modified by administrator.</p>
+<p>Navigate to the Lambda console and click on the Create Function button. Select Author from scratch and give the lambda function a name. Select Node.js runtime.
+<img alt="Api Access" src="/images/430-api_access-00.png"></p>
+<p>In the lambda window, click on the index.js to select it and replace the code with the following code. Click on Deploy when done.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>    <span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">handler</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">context</span>, <span style="color:#a6e22e">callback</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">claimsOverrideDetails</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">claimsToAddOrOverride</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">department</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Legal&#39;</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">callback</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">event</span>);
+</span></span><span style="display:flex;"><span>    };
+</span></span></code></pre></div><p><img alt="Api Access" src="/images/431-api_access-01.png"></p>
+<p>Navigate back to the Cognito console, select your &ldquo;CFJ&ndash;01&rdquo; user pool, in User pool properties tab, Add Lambda Trigger
+Select Authentication, Pre Token Generation trigger, select lambda function has just created. Click on the Save Changes button.
+<img alt="Api Access" src="/images/432-api_access-02.png"></p>
+<p>Go back to postman to get new token, get idtoken and use <a href="https://jwt.io" target="_blank">https://jwt.io</a> to decode it.
+<img alt="Api Access" src="/images/433-api_access-03.png"></p>
+<h2 id="adding-fine-grained-access-control">Adding fine-grained access control</h2>
+<p>We will add fine-grained access control to allow users access to S3 resources based on their department.</p>
+<p>Navigate to the Cognito console and select Manage Identity providers. Click on Edit Identity Pool. Expand the Authentication providers section and click on the dropdown button for Attribute access control Select the custom mappings item. Type department into both fields and then click on the save changes button.
+<img alt="Api Access" src="/images/440-api_access-10.png"></p>
+<p>Edit the trust policy of IAM role mapped to your identity pool to allow “sts:TagSession”. Replace identity-pool-id below with your Identity Pool ID</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Version&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Statement&#34;</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Principal&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Federated&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;cognito-identity.amazonaws.com&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;sts:AssumeRoleWithWebIdentity&#34;</span>, <span style="color:#e6db74">&#34;sts:TagSession&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Condition&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;StringEquals&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;cognito-identity.amazonaws.com:aud&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;identity-pool-id&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ForAnyValue:StringLike&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;cognito-identity.amazonaws.com:amr&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;authenticated&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Edit the IAM role mapped to your identity pool to allow listing objects under user’s department only as below</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Version&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Statement&#34;</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;s3:List*&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;*&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;Condition&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;StringEquals&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;s3:prefix&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;${aws:PrincipalTag/department}&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now test accessing S3 once again by sign-out, sign-in again and then navigate to “Access S3” tab. Try to list files under the bucket directly (with empty prefix) or under any sub-directory other than the one defined in user’s department claim. You should see 403 error returning from this call indicating that access is denied.</p>
+<p>Try listing files under “Engineering” sub-directory by providing “Engineering” in prefix. This call should succeed since you are trying to list files under the department that exists in token.</p>
+<p>What happened here? Why can I list files under “Engineering” prefix but not under “Legal”?</p>
+<p>Because user’s token has a “department” claim with the value “Engineering” (we added this claim from Pre Token Generation trigger).</p>
+<p>And we configured the identity pool to pass this claim as session tag with the name “department”, then we modified the IAM policy to allow access only if the requested prefix matches the “department” session tag.</p>
 
 
 <footer class="footline">
@@ -826,7 +900,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -842,9 +915,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -989,6 +1059,39 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1013,10 +1116,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create User Pool"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/4_lab_3_identity_pool/42_access_s3_nextjs.html" title="Access S3 in NextJS"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html" title="Explore OpenID Config and Hosted UI" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1_moduleone.html" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1026,19 +1129,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724307072"></script>
-    <script src="/js/jquery.sticky.js?1724307072"></script>
-    <script src="/js/featherlight.min.js?1724307072"></script>
-    <script src="/js/highlight.pack.js?1724307072"></script>
+    <script src="/js/clipboard.min.js?1724346225"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724346225"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724346225"></script>
+    <script src="/js/jquery.sticky.js?1724346225"></script>
+    <script src="/js/featherlight.min.js?1724346225"></script>
+    <script src="/js/highlight.pack.js?1724346225"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724307072"></script>
-    <script src="/js/learn.js?1724307072"></script>
-    <script src="/js/hugo-learn.js?1724307072"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724346225"></script>
+    <script src="/js/learn.js?1724346225"></script>
+    <script src="/js/hugo-learn.js?1724346225"></script>
     
         
-            <script src="/mermaid/mermaid.js?1724307072"></script>
+            <script src="/mermaid/mermaid.js?1724346225"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

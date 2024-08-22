@@ -9,21 +9,21 @@
 
     <link rel="icon" href="https://awsmedia.s3.amazonaws.com/favicon.ico" type="image/x-icon" />
 
-    <title>User Pool Configuration :: English</title>
+    <title>Access API in NextJS :: English</title>
 
     
-    <link href="/css/nucleus.css?1724307071" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724307071" rel="stylesheet">
-    <link href="/css/hybrid.css?1724307071" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724307071" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724307071" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724307071" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724307071" rel="stylesheet">
-    <link href="/css/theme.css?1724307071" rel="stylesheet">
-    <link href="/css/tabs.css?1724307071" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724307071" rel="stylesheet">
+    <link href="/css/nucleus.css?1724342879" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724342879" rel="stylesheet">
+    <link href="/css/hybrid.css?1724342879" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724342879" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724342879" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724342879" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724342879" rel="stylesheet">
+    <link href="/css/theme.css?1724342879" rel="stylesheet">
+    <link href="/css/tabs.css?1724342879" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724342879" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1724307071" rel="stylesheet">
+    <link href="/css/theme-mine.css?1724342879" rel="stylesheet">
     
     
 
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html">
+  <body class="" data-url="/4_lab_3_identity_pool/33_access_api_nextjs.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724307071"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724307071"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724342879"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724342879"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724307071"></script>
+<script type="text/javascript" src="/js/search.js?1724342879"></script>
 
     
   </div>
@@ -210,7 +210,7 @@
   
     
     <li data-nav-id="/2_lab_1_user_pool_api_authentication.html" title="Lab 1 - User Pool API Authentication" class="dd-item
-        parent
+        
         
         
         ">
@@ -259,7 +259,7 @@
  
   
     
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html" title="User Pool Configuration" class="dd-item active">
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html" title="User Pool Configuration" class="dd-item ">
         <a href="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html">
         User Pool Configuration
         <i class="fas fa-check read-icon"></i>
@@ -471,7 +471,7 @@
   
     
     <li data-nav-id="/4_lab_3_identity_pool.html" title="Lab 3 - Identity Pool" class="dd-item
-        
+        parent
         
         
         ">
@@ -502,6 +502,27 @@
       <li data-nav-id="/4_lab_3_identity_pool/41_create_identity_pool.html" title="Create Identity Pool" class="dd-item ">
         <a href="/4_lab_3_identity_pool/41_create_identity_pool.html">
         Create Identity Pool
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/33_access_api_nextjs.html" title="Access API in NextJS" class="dd-item active">
+        <a href="/4_lab_3_identity_pool/33_access_api_nextjs.html">
+        Access API in NextJS
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -612,7 +633,7 @@
             
           
           
-            <a href='/'>Authentication with AWS Cognito</a> > <a href='/2_lab_1_user_pool_api_authentication.html'>Lab 1 - User Pool API Authentication</a> > User Pool Configuration
+            <a href='/'>Authentication with AWS Cognito</a> > <a href='/4_lab_3_identity_pool.html'>Lab 3 - Identity Pool</a> > Access API in NextJS
           
         
           
@@ -638,43 +659,40 @@
         
 
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h1 id="resouce-server">Resouce Server</h1>
-<p>We are now ready to further configure our user pool, we will begin by adding a resource server. As this lab will grant access to a Mock API at this stage we will create the resource and scope that will provide authenticated access to the get method of the API.</p>
-<p>Select the App Integration tab and click on Create resource server
-<img alt="User Pool Configuration" src="/images/19-user-pool-configuration-01.png"></p>
-<p>Next we will enter as above the Resource server name, server identifier and Scope name then select Create resource server.
-<img alt="User Pool Configuration" src="/images/20-user-pool-configuration-02.png"></p>
-<h1 id="app-client-settings">App Client Settings</h1>
-<p>We will now configure the call back URLs, OAuth flows and OAuth scopes.</p>
-<p>Scroll down while still in the App integration tab to App client list and click on cfj-client”
-<img alt="User Pool Configuration" src="/images/21-user-pool-configuration-03.png"></p>
-<p>Then under Hosted UI select Edit
-<img alt="User Pool Configuration" src="/images/22-user-pool-configuration-04.png"></p>
-<p>There are a number of options to enable, ensure yours look the same as the image.</p>
-<p>First we add the Allowed sign-out URL to https://localhost</p>
-<p>Under OAuth 2.0 Grant Types select</p>
-<ul>
-<li>Authorization code grant and</li>
-<li>Implicit grant</li>
-</ul>
-
-<div class="notices note" ><p>The implicit grant flow exposes OAuth tokens in the url. Although we are using it here for testing purposes only, we strongly reocmmend you only use the authroization code flow with PKCE for public clients.</p>
-</div>
-
-<p>Under OpenID Connect Scopes select</p>
-<ul>
-<li>OpenID</li>
-<li>Profile</li>
-<li>Email</li>
-</ul>
-<p>Under Custom Scopes select</p>
-<ul>
-<li>cfj-01/read</li>
-</ul>
-<p>Finally click Save changes</p>
-<p><img alt="User Pool Configuration" src="/images/23-user-pool-configuration-05.png"></p>
+<h1 id="access-api-in-nextjs----modify-this-heading---">Access API in NextJS <!-- raw HTML omitted --></h1>
+<h2 id="postman">Postman</h2>
+<p>To confirm this is all working as expected return to Postman, the same tab from earlier will be open, click Send to call the api again. This time the response will be:
+<img alt="Api Access" src="/images/340-api_access-00.png"></p>
+<p>This is expected, the API now require authorisation!</p>
+<p>You can manually add this by extracting the token as in earlier steps when we tested the Authorizer in the API Gateway console or you can click on the Authorization tab, for type select OAuth 2.0 This should re-populate the settings we entered. Available tokens will be empty, scroll down and click Get New Token, put in the username and password of the user created. Click Proceed, this time once the Manage Access Tokens dialog appears click Use Token.</p>
+<p>Click on the Headers tab and notice the additional header key and value. Click Send and the API will again return data!
+<img alt="Api Access" src="/images/344-api_access-04.png"></p>
+<h2 id="nextjs-app">NextJS App</h2>
+<p>After sign-in and getting tokens, you can use these tokens to authorize access to protected APIs on API Gateway.</p>
+<p>This exercise is based on the APIs that has been created in 2. User Pool API Authentication.</p>
+<p>Important: Make sure that you have an API that uses Cognito authorizer for authorization using id_token. Remove Oauth Scopes from authorizer settings. Deploy to prod stage once done.</p>
+<p>Add button in dashboard page:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">makeRequestWithToken</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;https://06gfqqzl55.execute-api.ap-southeast-1.amazonaws.com/prod/pets&#39;</span>,{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;GET&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#39;Content-Type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/json&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#39;Authorization&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Bearer &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">session</span><span style="color:#f92672">?</span>.<span style="color:#a6e22e">accessToken</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>      })
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>()
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">setApiResponse</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">data</span>, <span style="color:#66d9ef">null</span>, <span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">error</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">setApiResponse</span>(<span style="color:#e6db74">&#34;Failed to fetch data: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">error</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>You can now test invoking the API, after you sign-in with &ldquo;Google&rdquo; and get tokens from Cognito, click the Make API Request button.
+<img alt="Api Access" src="/images/350-api_access-14.png"></p>
+<p>Notice the access-token is added to the authorization header and the endpoint responds with the expected results:
+<img alt="Api Access" src="/images/351-api_access-15.png"></p>
+<p>Currently, when you sign in by username/password, you will get error because in crendentials process, we does not process to request scope: cfj/read
+<img alt="Api Access" src="/images/352-api_access-16.png"></p>
 
 
 <footer class="footline">
@@ -826,7 +844,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -842,9 +859,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -989,6 +1003,23 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1013,10 +1044,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create User Pool"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/4_lab_3_identity_pool/41_create_identity_pool.html" title="Create Identity Pool"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html" title="Explore OpenID Config and Hosted UI" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1_moduleone.html" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1026,19 +1057,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724307072"></script>
-    <script src="/js/jquery.sticky.js?1724307072"></script>
-    <script src="/js/featherlight.min.js?1724307072"></script>
-    <script src="/js/highlight.pack.js?1724307072"></script>
+    <script src="/js/clipboard.min.js?1724342879"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724342879"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724342879"></script>
+    <script src="/js/jquery.sticky.js?1724342879"></script>
+    <script src="/js/featherlight.min.js?1724342879"></script>
+    <script src="/js/highlight.pack.js?1724342879"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724307072"></script>
-    <script src="/js/learn.js?1724307072"></script>
-    <script src="/js/hugo-learn.js?1724307072"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724342879"></script>
+    <script src="/js/learn.js?1724342879"></script>
+    <script src="/js/hugo-learn.js?1724342879"></script>
     
         
-            <script src="/mermaid/mermaid.js?1724307072"></script>
+            <script src="/mermaid/mermaid.js?1724342879"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

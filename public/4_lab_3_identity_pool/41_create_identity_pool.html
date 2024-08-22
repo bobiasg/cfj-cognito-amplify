@@ -12,18 +12,18 @@
     <title>Create Identity Pool :: English</title>
 
     
-    <link href="/css/nucleus.css?1724300001" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724300001" rel="stylesheet">
-    <link href="/css/hybrid.css?1724300001" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724300001" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724300001" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724300001" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724300001" rel="stylesheet">
-    <link href="/css/theme.css?1724300001" rel="stylesheet">
-    <link href="/css/tabs.css?1724300001" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724300001" rel="stylesheet">
+    <link href="/css/nucleus.css?1724346225" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724346225" rel="stylesheet">
+    <link href="/css/hybrid.css?1724346225" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724346225" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724346225" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724346225" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724346225" rel="stylesheet">
+    <link href="/css/theme.css?1724346225" rel="stylesheet">
+    <link href="/css/tabs.css?1724346225" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724346225" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1724300001" rel="stylesheet">
+    <link href="/css/theme-mine.css?1724346225" rel="stylesheet">
     
     
 
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724300001"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724300001"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724346225"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724346225"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724300001"></script>
+<script type="text/javascript" src="/js/search.js?1724346225"></script>
 
     
   </div>
@@ -511,6 +511,48 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/42_access_s3_nextjs.html" title="Access S3 in NextJS" class="dd-item ">
+        <a href="/4_lab_3_identity_pool/42_access_s3_nextjs.html">
+        Access S3 in NextJS
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/43_additional_claims.html" title="Enrich user token with additional claims" class="dd-item ">
+        <a href="/4_lab_3_identity_pool/43_additional_claims.html">
+        Enrich user token with additional claims
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -641,13 +683,13 @@
 <h1 id="create-identity-pool----modify-this-heading---">Create Identity Pool <!-- raw HTML omitted --></h1>
 <p>From main Cognito page in the AWS console, Select Grant access to AWS services and then select Create identity pool
 <img alt="Identity Pool" src="/images/400-api_access-00.png"></p>
-<p>You will see a page saying Identify the IAM roles to use with your new pool. Click on the Allow button to accept the defaults roles.
+<p>Select &ldquo;Authenticated access&rdquo; and &ldquo;Amazon Cognito user pool&rdquo;. Click &ldquo;Next&rdquo;
 <img alt="Identity Pool" src="/images/401-api_access-01.png"></p>
-<p>You will now see the Getting Started with Amazon Cognito page. Click on the Platform dropdown button and select JavaScript. Make a note of the region and the IdentityPoolId because you will need these values for your JavaScript code.
+<p>Select &ldquo;Create a new IAM role&rdquo;, enter &ldquo;cfj-01&rdquo; in role name
 <img alt="Identity Pool" src="/images/402-api_access-02.png"></p>
-<p>Navigate to IAM, Roles and type Cognito in the search bar. You should see the roles that Cognito automatically created for you when you enabled the Identity Pool.
+<p>Select User pool and App Client that was created in Lab 2
 <img alt="Identity Pool" src="/images/403-api_access-03.png"></p>
-<p>Select the IAM role with Auth in the name and edit this policy to allow listing files in S3. Don’t edit the Unauth policy as this is for unauthenticated users.
+<p>Enter pool name, and Click Next and Create identity pool
 <img alt="Identity Pool" src="/images/404-api_access-04.png"></p>
 <p>Create S3 Ducket For Testing</p>
 <ol>
@@ -988,6 +1030,41 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1003,7 +1080,7 @@
 			<a class="nav nav-prev" href="/4_lab_3_identity_pool.html" title="Lab 3 - Identity Pool"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/1_moduleone.html" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/4_lab_3_identity_pool/42_access_s3_nextjs.html" title="Access S3 in NextJS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1013,19 +1090,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724300001"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724300001"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724300001"></script>
-    <script src="/js/jquery.sticky.js?1724300001"></script>
-    <script src="/js/featherlight.min.js?1724300001"></script>
-    <script src="/js/highlight.pack.js?1724300001"></script>
+    <script src="/js/clipboard.min.js?1724346225"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724346225"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724346225"></script>
+    <script src="/js/jquery.sticky.js?1724346225"></script>
+    <script src="/js/featherlight.min.js?1724346225"></script>
+    <script src="/js/highlight.pack.js?1724346225"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724300001"></script>
-    <script src="/js/learn.js?1724300001"></script>
-    <script src="/js/hugo-learn.js?1724300001"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724346225"></script>
+    <script src="/js/learn.js?1724346225"></script>
+    <script src="/js/hugo-learn.js?1724346225"></script>
     
         
-            <script src="/mermaid/mermaid.js?1724300001"></script>
+            <script src="/mermaid/mermaid.js?1724346225"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

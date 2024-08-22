@@ -22,9 +22,7 @@ After sign-in and getting tokens, you can use these tokens to authorize access t
 
 This exercise is based on the APIs that has been created in 2. User Pool API Authentication.
 
-Important: Make sure that you have an API that uses Cognito authorizer for authorization using id_token. Remove Oauth Scopes from authorizer settings. Deploy to prod stage once done.
-
-Add button in dashboard page:
+Add button in dashboard page with click handler:
 ```js
 const makeRequestWithToken = async () => {
     try {

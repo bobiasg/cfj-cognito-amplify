@@ -18,11 +18,11 @@
   </url><url>
     <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</loc>
   </url><url>
+    <loc>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</loc>
+  </url><url>
     <loc>//localhost:1313/1_moduleone.html</loc>
   </url><url>
     <loc>//localhost:1313/1_moduleone/11_introduction_cognito.html</loc>
-  </url><url>
-    <loc>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</loc>
   </url><url>
     <loc>//localhost:1313/3_lab_2_access_api/32_create_cognito_authorizer.html</loc>
   </url><url>
@@ -34,11 +34,11 @@
   </url><url>
     <loc>//localhost:1313/3_lab_2_access_api/33_access_api_nextjs.html</loc>
   </url><url>
-    <loc>//localhost:1313/3_lab_2_access_api.html</loc>
-  </url><url>
     <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</loc>
   </url><url>
     <loc>//localhost:1313/1_moduleone/13_how_authentication_works.html</loc>
+  </url><url>
+    <loc>//localhost:1313/3_lab_2_access_api.html</loc>
   </url><url>
     <loc>//localhost:1313/4_lab_3_identity_pool.html</loc>
   </url><url>
