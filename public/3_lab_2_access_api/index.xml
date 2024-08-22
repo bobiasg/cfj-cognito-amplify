@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab 2 - Access Protected API on English</title>
+    <link>//localhost:1313/3_lab_2_access_api.html</link>
+    <description>Recent content in Lab 2 - Access Protected API on English</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/3_lab_2_access_api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy Mock API</title>
+      <link>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</guid>
+      <description>Deploy Mock API In the AWS Console, in the unified search type API Gateway and click on the API Gateway Service icon. Select REST API by clicking Build Then select Example API and click Create API. The Mock API and endpoints are ready configure Enable CORS And deploy. We will now define a stage, click the deployment stage combobox and select [New Stage]. Provide a Stage name*, for this example use Prod, then click deploy.</description>
+    </item>
+    <item>
+      <title>Create Cognito Authorizer</title>
+      <link>//localhost:1313/3_lab_2_access_api/32_create_cognito_authorizer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/3_lab_2_access_api/32_create_cognito_authorizer.html</guid>
+      <description>Cognito Authorizer Create Cognito Authorizer In API Gateway on the left menu click Authorizers , then click + Create New Authorizer input the name as cfj-ws-01, select Cognito and select your Cognito user pool in the drop down ( this should pre-populate when you click in the input field ).&#xA;Additionally add Authorization as the Token Source, ( note the spelling is Authorization ). Finally, click Create authorizer Your new Authorizer is ready, but before we attach this to the API let’s explore the test functionality.</description>
+    </item>
+    <item>
+      <title>Access API in NextJS</title>
+      <link>//localhost:1313/3_lab_2_access_api/33_access_api_nextjs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/3_lab_2_access_api/33_access_api_nextjs.html</guid>
+      <description>Access API in NextJS Postman To confirm this is all working as expected return to Postman, the same tab from earlier will be open, click Send to call the api again. This time the response will be: This is expected, the API now require authorisation!&#xA;You can manually add this by extracting the token as in earlier steps when we tested the Authorizer in the API Gateway console or you can click on the Authorization tab, for type select OAuth 2.</description>
+    </item>
+  </channel>
+</rss>

@@ -2,114 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/ee/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/1_moduleone.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/1_moduleone/11_introduction_cognito.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/11_introduction_cognito.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/11_introduction_cognito.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/3_modulethree/31_partnersetup.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3_modulethree/31_partnersetup.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/3_modulethree/31_partnersetup.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/1_moduleone/12_why_use_cognito.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/12_why_use_cognito.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/12_why_use_cognito.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/1_moduleone/13_how_authentication_works.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/13_how_authentication_works.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/13_how_authentication_works.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/3_modulethree.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3_modulethree.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/3_modulethree.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/4_modulefour.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/4_modulefour.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/4_modulefour.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/ee/1_moduleone/14_workshopprerequisites.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/14_workshopprerequisites.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/14_workshopprerequisites.html"
-                />
-  </url><url>
     <loc>//localhost:1313/ee/categories.html</loc>
     <xhtml:link
                 rel="alternate"
@@ -120,6 +12,18 @@
                 rel="alternate"
                 hreflang="ee"
                 href="//localhost:1313/ee/categories.html"
+                />
+  </url><url>
+    <loc>//localhost:1313/ee/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ee"
+                href="//localhost:1313/ee/"
                 />
   </url><url>
     <loc>//localhost:1313/ee/tags.html</loc>

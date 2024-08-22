@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Create Identity Pool</title>
+      <link>//localhost:1313/4_lab_3_identity_pool/41_create_identity_pool.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/4_lab_3_identity_pool/41_create_identity_pool.html</guid>
+      <description>Create Identity Pool From main Cognito page in the AWS console, Select Grant access to AWS services and then select Create identity pool You will see a page saying Identify the IAM roles to use with your new pool. Click on the Allow button to accept the defaults roles. You will now see the Getting Started with Amazon Cognito page. Click on the Platform dropdown button and select JavaScript. Make a note of the region and the IdentityPoolId because you will need these values for your JavaScript code.</description>
+    </item>
+    <item>
       <title>Create User Pool</title>
       <link>//localhost:1313/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,9 +30,16 @@
     </item>
     <item>
       <title>Partner Setup Instructions</title>
-      <link>//localhost:1313/3_modulethree/31_partnersetup.html</link>
+      <link>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/3_modulethree/31_partnersetup.html</guid>
+      <guid>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</guid>
+      <description>Partner Setup Instructions Submodule One Heading This paragraph block should be an introduction to the submodule.&#xA;Submodule One Subheading This paragraph block should be utilized to start the submodule. Next Section OR Conclusion Heading This paragraph block can be utilized to lead into the next section of the workshop (which might be a conclusion) or be a conclusion itself.&#xA;Example Guidance Content Below Do you require attendees to sign up for things?</description>
+    </item>
+    <item>
+      <title>Partner Setup Instructions</title>
+      <link>//localhost:1313/3_lab_2_access_api/32_create_cognito_authorizer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/3_lab_2_access_api/32_create_cognito_authorizer.html</guid>
       <description>Partner Setup Instructions Submodule One Heading This paragraph block should be an introduction to the submodule.&#xA;Submodule One Subheading This paragraph block should be utilized to start the submodule. Next Section OR Conclusion Heading This paragraph block can be utilized to lead into the next section of the workshop (which might be a conclusion) or be a conclusion itself.&#xA;Example Guidance Content Below Do you require attendees to sign up for things?</description>
     </item>
     <item>
@@ -41,6 +55,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/1_moduleone/12_why_use_cognito.html</guid>
       <description>Why use Cognito Integration with Other AWS Services Currently, there are many user management platforms, such as Clerk, Auth0, and others, that offer authentication features. Each of these services has unique advantages compared to AWS Cognito. However, when an application requires access to AWS resources, it’s essential to implement proper authorization and use Developer credentials/SDK to interact with those resources.&#xA;Cognito integrates seamlessly with other AWS services like API Gateway, Lambda, S3, and DynamoDB.</description>
+    </item>
+    <item>
+      <title>Access API in NextJS</title>
+      <link>//localhost:1313/3_lab_2_access_api/33_access_api_nextjs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/3_lab_2_access_api/33_access_api_nextjs.html</guid>
+      <description>Access API in NextJS Postman To confirm this is all working as expected return to Postman, the same tab from earlier will be open, click Send to call the api again. This time the response will be: This is expected, the API now require authorisation!&#xA;The API is expecting a new http header, the header required is: Click on the Headers tab and notice the additional header key and value. Note: you may need to click the small eye icon to display hidden/auto generated headers.</description>
     </item>
     <item>
       <title>Explore OpenID Config and Hosted UI</title>

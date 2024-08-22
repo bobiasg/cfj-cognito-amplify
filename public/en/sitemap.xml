@@ -14,109 +14,35 @@
                 href="//localhost:1313/"
                 />
   </url><url>
+    <loc>//localhost:1313/4_lab_3_identity_pool/41_create_identity_pool.html</loc>
+  </url><url>
     <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</loc>
   </url><url>
     <loc>//localhost:1313/1_moduleone.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone.html"
-                />
   </url><url>
     <loc>//localhost:1313/1_moduleone/11_introduction_cognito.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/11_introduction_cognito.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/11_introduction_cognito.html"
-                />
   </url><url>
-    <loc>//localhost:1313/3_modulethree/31_partnersetup.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/3_modulethree/31_partnersetup.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3_modulethree/31_partnersetup.html"
-                />
+    <loc>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</loc>
+  </url><url>
+    <loc>//localhost:1313/3_lab_2_access_api/32_create_cognito_authorizer.html</loc>
   </url><url>
     <loc>//localhost:1313/2_lab_1_user_pool_api_authentication.html</loc>
   </url><url>
     <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html</loc>
   </url><url>
     <loc>//localhost:1313/1_moduleone/12_why_use_cognito.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/12_why_use_cognito.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/12_why_use_cognito.html"
-                />
+  </url><url>
+    <loc>//localhost:1313/3_lab_2_access_api/33_access_api_nextjs.html</loc>
+  </url><url>
+    <loc>//localhost:1313/3_lab_2_access_api.html</loc>
   </url><url>
     <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</loc>
   </url><url>
     <loc>//localhost:1313/1_moduleone/13_how_authentication_works.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/13_how_authentication_works.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/13_how_authentication_works.html"
-                />
   </url><url>
-    <loc>//localhost:1313/3_modulethree.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/3_modulethree.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3_modulethree.html"
-                />
-  </url><url>
-    <loc>//localhost:1313/4_modulefour.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/4_modulefour.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/4_modulefour.html"
-                />
+    <loc>//localhost:1313/4_lab_3_identity_pool.html</loc>
   </url><url>
     <loc>//localhost:1313/1_moduleone/14_workshopprerequisites.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="//localhost:1313/ee/1_moduleone/14_workshopprerequisites.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1_moduleone/14_workshopprerequisites.html"
-                />
   </url><url>
     <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html</loc>
   </url><url>
