@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bobiasg.github.io/cfj-cognito-amplify/ee/categories.html</loc>
+    <loc>//localhost:1313/ee/categories.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bobiasg.github.io/cfj-cognito-amplify/categories.html"
+                href="//localhost:1313/categories.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ee"
-                href="https://bobiasg.github.io/cfj-cognito-amplify/ee/categories.html"
+                href="//localhost:1313/ee/categories.html"
                 />
   </url><url>
-    <loc>https://bobiasg.github.io/cfj-cognito-amplify/ee/</loc>
+    <loc>//localhost:1313/ee/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bobiasg.github.io/cfj-cognito-amplify/"
+                href="//localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ee"
-                href="https://bobiasg.github.io/cfj-cognito-amplify/ee/"
+                href="//localhost:1313/ee/"
                 />
   </url><url>
-    <loc>https://bobiasg.github.io/cfj-cognito-amplify/ee/tags.html</loc>
+    <loc>//localhost:1313/ee/tags.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bobiasg.github.io/cfj-cognito-amplify/tags.html"
+                href="//localhost:1313/tags.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ee"
-                href="https://bobiasg.github.io/cfj-cognito-amplify/ee/tags.html"
+                href="//localhost:1313/ee/tags.html"
                 />
   </url>
 </urlset>

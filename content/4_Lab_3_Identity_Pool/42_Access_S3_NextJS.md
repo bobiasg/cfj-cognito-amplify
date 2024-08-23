@@ -90,4 +90,4 @@ async function GetCredentials(idToken: string) {
 ```
 
 You can now test invoking the API, after you sign-in with "**_Google_**" and get tokens from Cognito, click the **Make S3 Request** button.
-![Api Access](/images/400-api_access-14.png)
+![Api Access](images/400-api_access-14.png)

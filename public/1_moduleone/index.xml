@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on English</title>
-    <link>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone.html</link>
+    <link>//localhost:1313/1_moduleone.html</link>
     <description>Recent content in Introduction on English</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/1_moduleone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Cognito</title>
-      <link>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/11_introduction_cognito.html</link>
+      <link>//localhost:1313/1_moduleone/11_introduction_cognito.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/11_introduction_cognito.html</guid>
+      <guid>//localhost:1313/1_moduleone/11_introduction_cognito.html</guid>
       <description>Introduction to Cognito Amazon Cognito lets you easily add user sign-up and authentication to your mobile and web apps. Amazon Cognito also enables you to authenticate users through an external identity provider and provides temporary security credentials to access your app’s backend resources in AWS or any service behind Amazon API Gateway. Amazon Cognito works with external identity providers that support SAML or OpenID Connect, social identity providers (such as Facebook, Apple, Amazon) and you can also integrate your own identity provider.</description>
     </item>
     <item>
       <title>Why use Cognito</title>
-      <link>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/12_why_use_cognito.html</link>
+      <link>//localhost:1313/1_moduleone/12_why_use_cognito.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/12_why_use_cognito.html</guid>
+      <guid>//localhost:1313/1_moduleone/12_why_use_cognito.html</guid>
       <description>Why use Cognito Integration with Other AWS Services Currently, there are many user management platforms, such as Clerk, Auth0, etc, that offer authentication features. Each of these services has unique advantages compared to AWS Cognito. However, when an application requires access to AWS resources, it’s essential to implement proper authorization and use Developer credentials/SDK to interact with those resources.&#xA;Cognito integrates seamlessly with other AWS services like API Gateway, Lambda, S3, and DynamoDB.</description>
     </item>
     <item>
       <title>How authentication works</title>
-      <link>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/13_how_authentication_works.html</link>
+      <link>//localhost:1313/1_moduleone/13_how_authentication_works.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/13_how_authentication_works.html</guid>
+      <guid>//localhost:1313/1_moduleone/13_how_authentication_works.html</guid>
       <description>How authentication works with Amazon Cognito user pools and identity pools When your customer signs in to an Amazon Cognito user pool, your application receives JSON web tokens (JWTs).&#xA;When your customer signs in to an identity pool, either with a user pool token or another provider, your application receives temporary AWS credentials.&#xA;With user pool sign-in, you can implement authentication and authorization entirely with an AWS SDK. If you don&amp;rsquo;t want to build your own user interface (UI) components, you can invoke a prebuilt web UI (the hosted UI) or the sign-in page for your third-party identity provider (IdP).</description>
     </item>
     <item>
       <title>Prerequisites</title>
-      <link>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/14_workshopprerequisites.html</link>
+      <link>//localhost:1313/1_moduleone/14_workshopprerequisites.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/14_workshopprerequisites.html</guid>
+      <guid>//localhost:1313/1_moduleone/14_workshopprerequisites.html</guid>
       <description>Prerequisites This lab requires access to the AWS Console with a role that contains full permissions to:&#xA;The AWS Console Cognito API Gateway S3 Lambda You will also require tools such as:&#xA;nodejs/nextjs Postman https://www.postman.com/ </description>
     </item>
   </channel>

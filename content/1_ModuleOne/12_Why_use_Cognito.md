@@ -11,7 +11,7 @@ Currently, there are many user management platforms, such as Clerk, Auth0, etc, 
 
 Cognito integrates seamlessly with other AWS services like API Gateway, Lambda, S3, and DynamoDB. This allows you to build comprehensive, robust, scalable, serverless applications where authentication and authorization are tightly coupled with your backend services.
 
-![Cognito Diagram](/images/01-CognitoDiagram.png)
+![Cognito Diagram](images/01-CognitoDiagram.png)
 
 [Source Image](https://aws.amazon.com/blogs/compute/secure-api-access-with-amazon-cognito-federated-identities-amazon-cognito-user-pools-and-amazon-api-gateway/): Amazon Blog
 

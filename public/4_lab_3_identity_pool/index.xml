@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lab 3 - Identity Pool on English</title>
-    <link>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool.html</link>
+    <link>//localhost:1313/4_lab_3_identity_pool.html</link>
     <description>Recent content in Lab 3 - Identity Pool on English</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/4_lab_3_identity_pool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create Identity Pool</title>
-      <link>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/41_create_identity_pool.html</link>
+      <link>//localhost:1313/4_lab_3_identity_pool/41_create_identity_pool.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/41_create_identity_pool.html</guid>
+      <guid>//localhost:1313/4_lab_3_identity_pool/41_create_identity_pool.html</guid>
       <description>Create Identity Pool From main Cognito page in the AWS console, Select Grant access to AWS services and then select Create identity pool Select &amp;ldquo;Authenticated access&amp;rdquo; and &amp;ldquo;Amazon Cognito user pool&amp;rdquo;. Click &amp;ldquo;Next&amp;rdquo; Select &amp;ldquo;Create a new IAM role&amp;rdquo;, enter &amp;ldquo;cfj-01&amp;rdquo; in role name Select User pool and App Client that was created in Lab 2 Enter pool name, and Click Next and Create identity pool Create S3 Ducket For Testing</description>
     </item>
     <item>
       <title>Access S3 in NextJS</title>
-      <link>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/42_access_s3_nextjs.html</link>
+      <link>//localhost:1313/4_lab_3_identity_pool/42_access_s3_nextjs.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/42_access_s3_nextjs.html</guid>
+      <guid>//localhost:1313/4_lab_3_identity_pool/42_access_s3_nextjs.html</guid>
       <description>Access S3 Bucket NextJS App After sign-in and getting tokens, you need to get credentials from Identity Pool and use it to access S3 bucket.&#xA;This exercise is based on the APIs that has been created in 2. User Pool API Authentication .&#xA;Add new api in /api/aws/s3/route.ts :&#xA;import { auth } from &amp;#34;@/libs/auth&amp;#34;; import { CognitoIdentityClient, GetCredentialsForIdentityCommand, GetIdCommand } from &amp;#34;@aws-sdk/client-cognito-identity&amp;#34;; import { ListObjectsV2Command, S3Client, } from &amp;#34;@aws-sdk/client-s3&amp;#34; export async function GET(req: Request) { const session = await auth() if (!</description>
     </item>
     <item>
       <title>Enrich user token with additional claims</title>
-      <link>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/43_additional_claims.html</link>
+      <link>//localhost:1313/4_lab_3_identity_pool/43_additional_claims.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/43_additional_claims.html</guid>
+      <guid>//localhost:1313/4_lab_3_identity_pool/43_additional_claims.html</guid>
       <description>Enrich user token with additional claims Add Claim with Lambda In this activity, we will enrich users token with additional claims using Pre Token Generation lambda trigger. This trigger will add “department” claim to the token as users sign-in. In real-world scenario, this could be based on a backend check to verify user’s department or it could be a custom claim in user’s profile that can be only modified by administrator.</description>
     </item>
   </channel>

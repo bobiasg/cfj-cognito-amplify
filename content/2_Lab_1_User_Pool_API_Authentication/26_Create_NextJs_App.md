@@ -62,11 +62,11 @@ As you can observe in the code snippet, all sensitive information is stored in a
 First, go back to AWS -> Cognito and select "_CFJ-01_" pool.
 
 Click on the App integration tab and scroll to the bottom. You will see the App client list. Great! Here, you should find your "_cfj-client_". Click on it. This is the place where you want to be:
-![NextApp](/images/80-nextjs-01.png)
+![NextApp](images/80-nextjs-01.png)
 
 
 The issuer is a URL, that looks like this: https://cognito-idp.{region}.amazonaws.com/{PoolId}, where PoolId is from General Settings in Cognito
-![NextApp](/images/81-nextjs-02.png)
+![NextApp](images/81-nextjs-02.png)
 
 ## Implementing User Authentication
 
@@ -169,22 +169,22 @@ npm run dev
 `
 
 It open page in browser at https://localhost:3000
-![NextApp](/images/90-nextjs-10.png)
+![NextApp](images/90-nextjs-10.png)
 
 Click "Sign In", and click "Sign in with Cognito", browser will be redirect to hosted UI site. 
-![NextApp](/images/91-nextjs-11.png)
+![NextApp](images/91-nextjs-11.png)
 
 But now, we got error by redirect missmatch.
-![NextApp](/images/92-nextjs-12.png)
+![NextApp](images/92-nextjs-12.png)
 
 Go to _Hosted UI_ setting to update callback Url. Add new callback url: https://localhost:3000/api/auth/callback/cognito 
-![NextApp](/images/93-nextjs-13.png)
+![NextApp](images/93-nextjs-13.png)
 
 We will access test app again at https://localhost:3000, click "Sign In", and click "Sign In with Cognito" to process authentication at Hosted UI site
-![NextApp](/images/94-nextjs-14.png)
+![NextApp](images/94-nextjs-14.png)
 
 Enter your crendentials, after authenticated, browser will be redirect to https://localhost:3000 
-![NextApp](/images/95-nextjs-15.png)
+![NextApp](images/95-nextjs-15.png)
 
 <!-- 
 {{% notice note %}}

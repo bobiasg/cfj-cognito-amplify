@@ -13,7 +13,7 @@ When your customer signs in to an identity pool, either with a user pool token o
 With user pool sign-in, you can implement authentication and authorization entirely with an AWS SDK. If you don't want to build your own user interface (UI) components, you can invoke a prebuilt web UI (the hosted UI) or the sign-in page for your third-party identity provider (IdP).
 
 ## User pool API authentication and authorization with an AWS SDK
-![User pool API Authentication](/images/05-authentication-api.png)
+![User pool API Authentication](images/05-authentication-api.png)
 
 #### API authentication flow
 
@@ -34,7 +34,7 @@ With user pool sign-in, you can implement authentication and authorization entir
 15. The application determines that the user's session should persist. It invokes the InitiateAuth method again with the refresh token and retrieves new tokens.
 
 ## User pool authentication with the hosted UI
-![User pool Hosted UI](/images/06-authentication-hosted-ui.png)
+![User pool Hosted UI](images/06-authentication-hosted-ui.png)
 
 #### Hosted UI authentication flow
 1. A user accesses your application.
@@ -55,7 +55,7 @@ With user pool sign-in, you can implement authentication and authorization entir
 16. The application determines that the user's session should persist. It requests new tokens from the token endpoint with the refresh token.
 
 ## User pool authentication with a third-party identity provider
-![User pool Authentication federated](/images/07-authentication-federated.png)
+![User pool Authentication federated](images/07-authentication-federated.png)
 
 #### Federated authentication flow
 1. A user accesses your application.
@@ -77,7 +77,7 @@ With user pool sign-in, you can implement authentication and authorization entir
 17. The application determines that the user's session should persist. It requests new tokens from the token endpoint with the refresh token.
 
 ## Identity pool authentication
-![User pool Authentication federated](/images/08-authentication-identity-pool.png)
+![User pool Authentication federated](images/08-authentication-identity-pool.png)
 
 #### Federated authentication flow
 1. A user accesses your application.
