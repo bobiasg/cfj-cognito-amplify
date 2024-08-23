@@ -12,18 +12,18 @@
     <title>User Pool Configuration :: English</title>
 
     
-    <link href="/css/nucleus.css?1724307071" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724307071" rel="stylesheet">
-    <link href="/css/hybrid.css?1724307071" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724307071" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724307071" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724307071" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724307071" rel="stylesheet">
-    <link href="/css/theme.css?1724307071" rel="stylesheet">
-    <link href="/css/tabs.css?1724307071" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724307071" rel="stylesheet">
+    <link href="/css/nucleus.css?1724402872" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724402872" rel="stylesheet">
+    <link href="/css/hybrid.css?1724402872" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724402872" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724402872" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724402872" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724402872" rel="stylesheet">
+    <link href="/css/theme.css?1724402872" rel="stylesheet">
+    <link href="/css/tabs.css?1724402872" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724402872" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1724307071" rel="stylesheet">
+    <link href="/css/theme-mine.css?1724402872" rel="stylesheet">
     
     
 
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724307071"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724307071"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724402872"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724402872"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724307071"></script>
+<script type="text/javascript" src="/js/search.js?1724402872"></script>
 
     
   </div>
@@ -238,9 +238,9 @@
  
   
     
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create User Pool" class="dd-item ">
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create Cognito User Pool" class="dd-item ">
         <a href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html">
-        Create User Pool
+        Create Cognito User Pool
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -283,27 +283,6 @@
       <li data-nav-id="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html" title="Explore OpenID Config and Hosted UI" class="dd-item ">
         <a href="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html">
         Explore OpenID Config and Hosted UI
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html" title="Restricting Api Access" class="dd-item ">
-        <a href="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html">
-        Restricting Api Access
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -511,6 +490,48 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/42_access_s3_nextjs.html" title="Access S3 in NextJS" class="dd-item ">
+        <a href="/4_lab_3_identity_pool/42_access_s3_nextjs.html">
+        Access S3 in NextJS
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/43_additional_claims.html" title="Enrich user token with additional claims" class="dd-item ">
+        <a href="/4_lab_3_identity_pool/43_additional_claims.html">
+        Enrich user token with additional claims
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -640,17 +661,17 @@
 
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<h1 id="resouce-server">Resouce Server</h1>
+<h2 id="resouce-server">Resouce Server</h2>
 <p>We are now ready to further configure our user pool, we will begin by adding a resource server. As this lab will grant access to a Mock API at this stage we will create the resource and scope that will provide authenticated access to the get method of the API.</p>
-<p>Select the App Integration tab and click on Create resource server
+<p>Select the <strong>App Integration</strong> tab and click on <strong>Create resource server</strong>
 <img alt="User Pool Configuration" src="/images/19-user-pool-configuration-01.png"></p>
-<p>Next we will enter as above the Resource server name, server identifier and Scope name then select Create resource server.
+<p>Next we will enter as above the Resource server name, server identifier and Scope name then select <strong>Create resource server</strong>.
 <img alt="User Pool Configuration" src="/images/20-user-pool-configuration-02.png"></p>
-<h1 id="app-client-settings">App Client Settings</h1>
+<h2 id="app-client-settings">App Client Settings</h2>
 <p>We will now configure the call back URLs, OAuth flows and OAuth scopes.</p>
-<p>Scroll down while still in the App integration tab to App client list and click on cfj-client”
+<p>Scroll down while still in the App integration tab to App client list and click on &ldquo;<em>cfj-client</em>&rdquo;
 <img alt="User Pool Configuration" src="/images/21-user-pool-configuration-03.png"></p>
-<p>Then under Hosted UI select Edit
+<p>Then under Hosted UI select <strong>Edit</strong>
 <img alt="User Pool Configuration" src="/images/22-user-pool-configuration-04.png"></p>
 <p>There are a number of options to enable, ensure yours look the same as the image.</p>
 <p>First we add the Allowed sign-out URL to https://localhost</p>
@@ -889,22 +910,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -984,6 +989,38 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1013,7 +1050,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create User Pool"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create Cognito User Pool"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html" title="Explore OpenID Config and Hosted UI" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1026,19 +1063,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724307072"></script>
-    <script src="/js/jquery.sticky.js?1724307072"></script>
-    <script src="/js/featherlight.min.js?1724307072"></script>
-    <script src="/js/highlight.pack.js?1724307072"></script>
+    <script src="/js/clipboard.min.js?1724402872"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724402872"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724402872"></script>
+    <script src="/js/jquery.sticky.js?1724402872"></script>
+    <script src="/js/featherlight.min.js?1724402872"></script>
+    <script src="/js/highlight.pack.js?1724402872"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724307072"></script>
-    <script src="/js/learn.js?1724307072"></script>
-    <script src="/js/hugo-learn.js?1724307072"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724402872"></script>
+    <script src="/js/learn.js?1724402872"></script>
+    <script src="/js/hugo-learn.js?1724402872"></script>
     
         
-            <script src="/mermaid/mermaid.js?1724307072"></script>
+            <script src="/mermaid/mermaid.js?1724402872"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

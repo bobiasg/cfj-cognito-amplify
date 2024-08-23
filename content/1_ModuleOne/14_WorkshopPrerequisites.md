@@ -11,8 +11,10 @@ This lab requires access to the AWS Console with a role that contains full permi
 - The AWS Console
 - Cognito
 - API Gateway
+- S3
+- Lambda
 
 You will also require tools such as:
-- nodejs
+- nodejs/nextjs
 - Postman https://www.postman.com/
 

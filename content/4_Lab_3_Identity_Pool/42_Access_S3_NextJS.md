@@ -9,11 +9,9 @@ weight: 2 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 ## NextJS App
 After sign-in and getting tokens, you need to get credentials from Identity Pool and use it to access S3 bucket.
 
-This exercise is based on the APIs that has been created in 2. User Pool API Authentication.
+This exercise is based on the APIs that has been created in [2. User Pool API Authentication]({{< ref "/2_Lab_1_User_Pool_API_Authentication" >}}) .
 
-Important: Make sure that you have an API that uses Cognito authorizer for authorization using id_token. Remove Oauth Scopes from authorizer settings. Deploy to prod stage once done.
-
-Add new api in /api/aws/s3/route.ts :
+Add new api in _/api/aws/s3/route.ts_ :
 ```js
 import { auth } from "@/libs/auth";
 import { CognitoIdentityClient, GetCredentialsForIdentityCommand, GetIdCommand } from "@aws-sdk/client-cognito-identity";
@@ -91,5 +89,5 @@ async function GetCredentials(idToken: string) {
 }
 ```
 
-You can now test invoking the API, after you sign-in with "Google" and get tokens from Cognito, click the Make S3 Request button.
+You can now test invoking the API, after you sign-in with "**_Google_**" and get tokens from Cognito, click the **Make S3 Request** button.
 ![Api Access](/images/400-api_access-14.png)

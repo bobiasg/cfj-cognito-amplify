@@ -19,7 +19,7 @@
       <link>//localhost:1313/1_moduleone/12_why_use_cognito.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/1_moduleone/12_why_use_cognito.html</guid>
-      <description>Why use Cognito Integration with Other AWS Services Currently, there are many user management platforms, such as Clerk, Auth0, and others, that offer authentication features. Each of these services has unique advantages compared to AWS Cognito. However, when an application requires access to AWS resources, it’s essential to implement proper authorization and use Developer credentials/SDK to interact with those resources.&#xA;Cognito integrates seamlessly with other AWS services like API Gateway, Lambda, S3, and DynamoDB.</description>
+      <description>Why use Cognito Integration with Other AWS Services Currently, there are many user management platforms, such as Clerk, Auth0, etc, that offer authentication features. Each of these services has unique advantages compared to AWS Cognito. However, when an application requires access to AWS resources, it’s essential to implement proper authorization and use Developer credentials/SDK to interact with those resources.&#xA;Cognito integrates seamlessly with other AWS services like API Gateway, Lambda, S3, and DynamoDB.</description>
     </item>
     <item>
       <title>How authentication works</title>
@@ -33,7 +33,7 @@
       <link>//localhost:1313/1_moduleone/14_workshopprerequisites.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/1_moduleone/14_workshopprerequisites.html</guid>
-      <description>Prerequisites This lab requires access to the AWS Console with a role that contains full permissions to:&#xA;The AWS Console Cognito API Gateway You will also require tools such as:&#xA;nodejs Postman https://www.postman.com/ </description>
+      <description>Prerequisites This lab requires access to the AWS Console with a role that contains full permissions to:&#xA;The AWS Console Cognito API Gateway S3 Lambda You will also require tools such as:&#xA;nodejs/nextjs Postman https://www.postman.com/ </description>
     </item>
   </channel>
 </rss>

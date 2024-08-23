@@ -13,8 +13,8 @@ When building a Next.js 14 application, implementing robust authentication is cr
 
 In this workshop, we’ll walk through how to set up Cognito for a simple web app. We’ll perform these steps:
 
-- Create a Cogni1to user pool
-- Add sign-up and sign-in pages
+- Create a Cognito user pool
+- Add sign-in pages
 - Assign IAM roles to authenticated users
 - Access AWS resources from the app
 <!-- - Verify email addresses and phone numbers -->
@@ -26,23 +26,15 @@ This workshop should take you anywhere between 1 to 4 hours to complete.
 During this workshop you use multiple AWS services including:
 
 - Amazon Cognito
-- Amazon Amplify
+- Amazon S3
 - Amazon API Gateway
-<!-- - Amazon Verified Permissions
-- AWS Lambda
-- Amazon Simple Storage Service (Amazon S3)
-- AWS Command Line Interface (AWS CLI)
-- AWS Cloud Development Kit (AWS CDK)
-- AWS Amplify Hosting
-- Amazon CloudWatch Logs and AWS X-Ray -->
-
+- Amazon Lambda
 
 ## TOC <!-- MODIFY THIS SUBHEADING -->
 
-- Getting Started
-- Setting up AWS Cognito
-- Implement sign-up and sign-in page
-- Implement access AWS resources from the app
+- Lab 1: User Pool API Authentication
+- Lab 2: Access API
+- Lab 3: Identity Pool
 
 {{% notice warning %}}
 The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.

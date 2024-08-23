@@ -12,18 +12,18 @@
     <title>Enrich user token with additional claims :: English</title>
 
     
-    <link href="/css/nucleus.css?1724346225" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724346225" rel="stylesheet">
-    <link href="/css/hybrid.css?1724346225" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724346225" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724346225" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724346225" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724346225" rel="stylesheet">
-    <link href="/css/theme.css?1724346225" rel="stylesheet">
-    <link href="/css/tabs.css?1724346225" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724346225" rel="stylesheet">
+    <link href="/css/nucleus.css?1724402872" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724402872" rel="stylesheet">
+    <link href="/css/hybrid.css?1724402872" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724402872" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724402872" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724402872" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724402872" rel="stylesheet">
+    <link href="/css/theme.css?1724402872" rel="stylesheet">
+    <link href="/css/tabs.css?1724402872" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724402872" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1724346225" rel="stylesheet">
+    <link href="/css/theme-mine.css?1724402872" rel="stylesheet">
     
     
 
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724346225"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724346225"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724402872"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724402872"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724346225"></script>
+<script type="text/javascript" src="/js/search.js?1724402872"></script>
 
     
   </div>
@@ -238,9 +238,9 @@
  
   
     
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create User Pool" class="dd-item ">
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create Cognito User Pool" class="dd-item ">
         <a href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html">
-        Create User Pool
+        Create Cognito User Pool
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -283,27 +283,6 @@
       <li data-nav-id="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html" title="Explore OpenID Config and Hosted UI" class="dd-item ">
         <a href="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html">
         Explore OpenID Config and Hosted UI
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html" title="Restricting Api Access" class="dd-item ">
-        <a href="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html">
-        Restricting Api Access
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -682,7 +661,7 @@
 
 <h1 id="enrich-user-token-with-additional-claims----modify-this-heading---">Enrich user token with additional claims <!-- raw HTML omitted --></h1>
 <h2 id="add-claim-with-lambda">Add Claim with Lambda</h2>
-<p>In this activity, we will enrich users token with additional claims using Pre Token Generation lambda trigger. This trigger will add “department” claim to the token as users sign-in. In real-world scenario, this could be based on a backend check to verify user’s department or it could be a custom claim in user’s profile that can be only modified by administrator.</p>
+<p>In this activity, we will enrich users token with additional claims using Pre Token Generation lambda trigger. This trigger will add “<em>department</em>” claim to the token as users sign-in. In real-world scenario, this could be based on a backend check to verify user’s department or it could be a custom claim in user’s profile that can be only modified by administrator.</p>
 <p>Navigate to the Lambda console and click on the Create Function button. Select Author from scratch and give the lambda function a name. Select Node.js runtime.
 <img alt="Api Access" src="/images/430-api_access-00.png"></p>
 <p>In the lambda window, click on the index.js to select it and replace the code with the following code. Click on Deploy when done.</p>
@@ -698,16 +677,16 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">callback</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">event</span>);
 </span></span><span style="display:flex;"><span>    };
 </span></span></code></pre></div><p><img alt="Api Access" src="/images/431-api_access-01.png"></p>
-<p>Navigate back to the Cognito console, select your &ldquo;CFJ&ndash;01&rdquo; user pool, in User pool properties tab, Add Lambda Trigger
+<p>Navigate back to the Cognito console, select your &ldquo;<em>CFJ-01</em>&rdquo; user pool, in User pool properties tab, <strong>Add Lambda Trigger</strong>
 Select Authentication, Pre Token Generation trigger, select lambda function has just created. Click on the Save Changes button.
 <img alt="Api Access" src="/images/432-api_access-02.png"></p>
 <p>Go back to postman to get new token, get idtoken and use <a href="https://jwt.io" target="_blank">https://jwt.io</a> to decode it.
 <img alt="Api Access" src="/images/433-api_access-03.png"></p>
 <h2 id="adding-fine-grained-access-control">Adding fine-grained access control</h2>
 <p>We will add fine-grained access control to allow users access to S3 resources based on their department.</p>
-<p>Navigate to the Cognito console and select Manage Identity providers. Click on Edit Identity Pool. Expand the Authentication providers section and click on the dropdown button for Attribute access control Select the custom mappings item. Type department into both fields and then click on the save changes button.
+<p>Navigate to the Cognito console and select &ldquo;<em>cfj-identity-ws-01</em>&rdquo; Identity pool. In Identity providers tab, select Amazon Cognito user pool, Click on Edit on Attributes for access control. Select &ldquo;<em>Use custom mappings</em>&rdquo; and add new attribute map
 <img alt="Api Access" src="/images/440-api_access-10.png"></p>
-<p>Edit the trust policy of IAM role mapped to your identity pool to allow “sts:TagSession”. Replace identity-pool-id below with your Identity Pool ID</p>
+<p>Edit the trust policy of IAM role mapped to your identity pool to allow “<em><strong>sts:TagSession</strong></em>”. Replace identity-pool-id below with your Identity Pool ID</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Version&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;Statement&#34;</span><span style="color:#f92672">:</span> [
@@ -744,11 +723,12 @@ Select Authentication, Pre Token Generation trigger, select lambda function has 
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Now test accessing S3 once again by sign-out, sign-in again and then navigate to “Access S3” tab. Try to list files under the bucket directly (with empty prefix) or under any sub-directory other than the one defined in user’s department claim. You should see 403 error returning from this call indicating that access is denied.</p>
-<p>Try listing files under “Engineering” sub-directory by providing “Engineering” in prefix. This call should succeed since you are trying to list files under the department that exists in token.</p>
-<p>What happened here? Why can I list files under “Engineering” prefix but not under “Legal”?</p>
-<p>Because user’s token has a “department” claim with the value “Engineering” (we added this claim from Pre Token Generation trigger).</p>
-<p>And we configured the identity pool to pass this claim as session tag with the name “department”, then we modified the IAM policy to allow access only if the requested prefix matches the “department” session tag.</p>
+</span></span></code></pre></div><p>Now test accessing S3 once again by sign-out, sign-in again and then navigate to &ldquo;<strong>Make S3 Request</strong>&rdquo; button. You should see 403 error returning from this call indicating that access is denied.</p>
+<p>Try &ldquo;<strong>Make S3 Request: Legal</strong>&rdquo; button. This call should succeed since you are trying to list files under the department that exists in token.</p>
+<p>What happened here? Why can I list files under “Legal” prefix but not under &ldquo;Engineering&rdquo; ?</p>
+<p>Because user’s token has a “department” claim with the value “Legal” (we added this claim from Pre Token Generation trigger).</p>
+<p>And we configured the identity pool to pass this claim as session tag with the name “department”, then we modified the IAM policy to allow access only if the requested prefix matches the “department” session tag.
+<img alt="Api Access" src="/images/440-api_access-11.png"></p>
 
 
 <footer class="footline">
@@ -878,22 +858,6 @@ Select Authentication, Pre Token Generation trigger, select lambda function has 
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1129,19 +1093,19 @@ Select Authentication, Pre Token Generation trigger, select lambda function has 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724346225"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724346225"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724346225"></script>
-    <script src="/js/jquery.sticky.js?1724346225"></script>
-    <script src="/js/featherlight.min.js?1724346225"></script>
-    <script src="/js/highlight.pack.js?1724346225"></script>
+    <script src="/js/clipboard.min.js?1724402872"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724402872"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724402872"></script>
+    <script src="/js/jquery.sticky.js?1724402872"></script>
+    <script src="/js/featherlight.min.js?1724402872"></script>
+    <script src="/js/highlight.pack.js?1724402872"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724346225"></script>
-    <script src="/js/learn.js?1724346225"></script>
-    <script src="/js/hugo-learn.js?1724346225"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724402872"></script>
+    <script src="/js/learn.js?1724402872"></script>
+    <script src="/js/hugo-learn.js?1724402872"></script>
     
         
-            <script src="/mermaid/mermaid.js?1724346225"></script>
+            <script src="/mermaid/mermaid.js?1724402872"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

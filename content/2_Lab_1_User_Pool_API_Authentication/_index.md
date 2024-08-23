@@ -8,5 +8,4 @@ weight: 2
 
 In this Lab you will setup a User Pool with a Hosted UI. You will explore OpenID and different approaches on how to configure and test OAuth 2.0. And we will implement it in nextjs app.
 
-
-.................... Diagram
+<!-- TODO diagram -->

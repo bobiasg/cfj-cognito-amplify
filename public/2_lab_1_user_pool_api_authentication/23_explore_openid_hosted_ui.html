@@ -12,18 +12,18 @@
     <title>Explore OpenID Config and Hosted UI :: English</title>
 
     
-    <link href="/css/nucleus.css?1724307071" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1724307071" rel="stylesheet">
-    <link href="/css/hybrid.css?1724307071" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1724307071" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1724307071" rel="stylesheet">
-    <link href="/css/auto-complete.css?1724307071" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1724307071" rel="stylesheet">
-    <link href="/css/theme.css?1724307071" rel="stylesheet">
-    <link href="/css/tabs.css?1724307071" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1724307071" rel="stylesheet">
+    <link href="/css/nucleus.css?1724402872" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1724402872" rel="stylesheet">
+    <link href="/css/hybrid.css?1724402872" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1724402872" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1724402872" rel="stylesheet">
+    <link href="/css/auto-complete.css?1724402872" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1724402872" rel="stylesheet">
+    <link href="/css/theme.css?1724402872" rel="stylesheet">
+    <link href="/css/tabs.css?1724402872" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1724402872" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1724307071" rel="stylesheet">
+    <link href="/css/theme-mine.css?1724402872" rel="stylesheet">
     
     
 
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1724307071"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1724307071"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1724402872"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1724402872"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1724307071"></script>
+<script type="text/javascript" src="/js/search.js?1724402872"></script>
 
     
   </div>
@@ -238,9 +238,9 @@
  
   
     
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create User Pool" class="dd-item ">
+      <li data-nav-id="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html" title="Create Cognito User Pool" class="dd-item ">
         <a href="/2_lab_1_user_pool_api_authentication/21_create_user_pool.html">
-        Create User Pool
+        Create Cognito User Pool
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -283,27 +283,6 @@
       <li data-nav-id="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html" title="Explore OpenID Config and Hosted UI" class="dd-item active">
         <a href="/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html">
         Explore OpenID Config and Hosted UI
-        <i class="fas fa-check read-icon"></i>
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html" title="Restricting Api Access" class="dd-item ">
-        <a href="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html">
-        Restricting Api Access
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -511,6 +490,48 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/42_access_s3_nextjs.html" title="Access S3 in NextJS" class="dd-item ">
+        <a href="/4_lab_3_identity_pool/42_access_s3_nextjs.html">
+        Access S3 in NextJS
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/4_lab_3_identity_pool/43_additional_claims.html" title="Enrich user token with additional claims" class="dd-item ">
+        <a href="/4_lab_3_identity_pool/43_additional_claims.html">
+        Enrich user token with additional claims
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -640,7 +661,7 @@
 
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<h1 id="openid-config----modify-this-heading-if-necessary---">OpenID Config <!-- raw HTML omitted --></h1>
+<h2 id="openid-config----modify-this-heading-if-necessary---">OpenID Config <!-- raw HTML omitted --></h2>
 <p>Lets explore the published configuration and it’s format. This configuration follows a convention</p>
 <p>https://cognito-idp.{region}.amazonaws.com/{userpoolid}/.well-known/openid-configuration</p>
 <p>On the console, on the left menu click on General settings, here you will find the user pool id:
@@ -648,25 +669,30 @@
 <p>Copy this to construct your OpenID config URL and open this in your browser.
 <a href="https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_3JmHkB1jl/.well-known/openid-configuration" target="_blank">https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_3JmHkB1jl/.well-known/openid-configuration</a></p>
 <p><img alt="Explore OpenID" src="/images/25-explore-openid-02.png"></p>
-<h1 id="hosted-ui">Hosted UI</h1>
-<p>Lets explore the hosted UI and options.</p>
-<p>Return to the AWS Console, Under the tab App integration click on cfj-client. From here click on View Hosted UI this will open a window/tab. Link will be <a href="https://cfj-01.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize?client_id=xxxx&amp;response_type=code&amp;scope=cfj%2Fread&#43;email&#43;openid&#43;profile&amp;redirect_uri=https%3A%2F%2Flocalhost" target="_blank">https://cfj-01.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize?client_id=xxxx&amp;response_type=code&amp;scope=cfj%2Fread&#43;email&#43;openid&#43;profile&amp;redirect_uri=https%3A%2F%2Flocalhost</a></p>
+<h2 id="hosted-ui">Hosted UI</h2>
+<p>Return to the AWS Console, Under the tab App integration click on <em>cfj-client</em>. From here click on <strong>View Hosted UI</strong> this will open a window/tab. Link will be <a href="https://cfj-01.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize?client_id=xxxx&amp;response_type=code&amp;scope=cfj%2Fread&#43;email&#43;openid&#43;profile&amp;redirect_uri=https%3A%2F%2Flocalhost" target="_blank">https://cfj-01.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize?client_id=xxxx&amp;response_type=code&amp;scope=cfj%2Fread&#43;email&#43;openid&#43;profile&amp;redirect_uri=https%3A%2F%2Flocalhost</a></p>
 <p><img alt="Explore HostedUI" src="/images/25-explore-hostedui-01.png"></p>
-<p>In the New tab click Sign up we will be registering a new user. Fill out the registration form and ensure you use a real email address as a OTP ( One Time Password ) will be sent to this address to enable account confirmation. Click Sign up</p>
+<p>In the New tab click <em>Sign up</em> we will be registering a new user. Fill out the registration form and ensure you use a real email address as a OTP ( One Time Password ) will be sent to this address to enable account confirmation. Click <strong>Sign up</strong></p>
 <p><img alt="Explore HostedUI" src="/images/27-explore-hostedui-03.png"></p>
-<p>Check your email inbox for the OTP and enter the value and click Confirm Account. The email you receive is minimal and not styled; this can all be customised if required.
+<p>Check your email inbox for the OTP and enter the value and click Confirm Account. The email you receive is minimal and this can all be customised if required.
 <img alt="Explore HostedUI" src="/images/28-explore-hostedui-04.png"></p>
 <p>Once your account is confirmed you will be redirected back to your application, as we configured that url for this exercise to localhost and we are not hosting an application your browser will display the following.
-Take note of the URL it will be: https://localhost/?code=5768f05d-9077-4acb-a4d6-4978923f1995 though will be a different code.
+Take note of the URL it will be: <em>https://localhost/?code=5768f05d-9077-4acb-a4d6-4978923f1995</em> though will be a different code.
 <img alt="Explore HostedUI" src="/images/29-explore-hostedui-05.png"></p>
 <p>Let’s now look at the response when we change to implicit flow sign in. Change the response type value to token from code
 <a href="https://cfj-01.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize?client_id=xxxx&amp;" target="_blank">https://cfj-01.auth.ap-southeast-1.amazoncognito.com/oauth2/authorize?client_id=xxxx&amp;</a><strong>response_type=token</strong>&amp;scope=cfj%2Fread+email+openid+profile&amp;redirect_uri=https%3A%2F%2Flocalhost</p>
 <p>And press enter to load the new URL, enter the user details you created previously and click Sign in
 “https://localhost/#id_token={a-large-id-token}&amp;access_token={a-large-access-token}&amp;expires_in=3600&amp;token_type=Bearer” because your browser can’t connect to the server “localhost”.</p>
-<h1 id="authorization-in-postman">Authorization in Postman</h1>
-<p>Once postman launches, click the + to open a new tab. Once we have a new tab, click on the Authorisation item, then change the type to OAuth 2.0
+<h2 id="authorization-in-postman">Authorization in Postman</h2>
+<p>Once postman launches, click the + to open a new tab. Once we have a new tab, click on the <em>Authorization</em>, then change the type to <em>OAuth 2.0</em>
 <img alt="Postman" src="/images/30-postman-06.png"></p>
-<p>Fill out the settings as per below, the Callback URL will be: https://localhost The Auth URL’s will be: https://{your-cognito-domain}.auth.{your-region}.amazoncognito.com/oauth2/authorize and https://{your-cognito-domain}.auth.{your-region}.amazoncognito.com/oauth2/token This can be found by navigating in Cognito console to App integration tab. Then in there, look for Cognito domain. The Client ID can be found by scrolling down in the App integration page to App client and analytics section. The ID will be listed next to your App client name.</p>
+<p>Fill out the settings as per below:</p>
+<ul>
+<li>the Callback URL will be: https://localhost</li>
+<li>The Auth URL’s will be: <em>https://{your-cognito-domain}.auth.{your-region}.amazoncognito.com/oauth2/authorize</em></li>
+<li>and <em>https://{your-cognito-domain}.auth.{your-region}.amazoncognito.com/oauth2/token</em></li>
+</ul>
+<p>This can be found by navigating in Cognito console to App integration tab. Then in there, look for Cognito domain. The Client ID can be found by scrolling down in the App integration page to App client and analytics section. The ID will be listed next to your App client name.</p>
 <p><img alt="Postman" src="/images/31-postman-07.png"></p>
 <p>Then click Get New Access Token. This will pop up a mini browser requesting your credentials, use the credentials you created earlier to login and click Sign in.
 <img alt="Postman" src="/images/33-postman-09.png"></p>
@@ -888,22 +914,6 @@ Take note of the URL it will be: https://localhost/?code=5768f05d-9077-4acb-a4d6
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -983,6 +993,38 @@ Take note of the URL it will be: https://localhost/?code=5768f05d-9077-4acb-a4d6
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1015,7 +1057,7 @@ Take note of the URL it will be: https://localhost/?code=5768f05d-9077-4acb-a4d6
 			<a class="nav nav-prev" href="/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html" title="User Pool Configuration"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html" title="Restricting Api Access" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html" title="Nextjs App With NextAuth" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1025,19 +1067,19 @@ Take note of the URL it will be: https://localhost/?code=5768f05d-9077-4acb-a4d6
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.min.js?1724307072"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1724307072"></script>
-    <script src="/js/jquery.sticky.js?1724307072"></script>
-    <script src="/js/featherlight.min.js?1724307072"></script>
-    <script src="/js/highlight.pack.js?1724307072"></script>
+    <script src="/js/clipboard.min.js?1724402872"></script>
+    <script src="/js/perfect-scrollbar.min.js?1724402872"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1724402872"></script>
+    <script src="/js/jquery.sticky.js?1724402872"></script>
+    <script src="/js/featherlight.min.js?1724402872"></script>
+    <script src="/js/highlight.pack.js?1724402872"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1724307072"></script>
-    <script src="/js/learn.js?1724307072"></script>
-    <script src="/js/hugo-learn.js?1724307072"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1724402872"></script>
+    <script src="/js/learn.js?1724402872"></script>
+    <script src="/js/hugo-learn.js?1724402872"></script>
     
         
-            <script src="/mermaid/mermaid.js?1724307072"></script>
+            <script src="/mermaid/mermaid.js?1724402872"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

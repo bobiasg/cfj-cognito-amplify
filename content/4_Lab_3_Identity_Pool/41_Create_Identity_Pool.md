@@ -5,13 +5,13 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 ---
 
 # Create Identity Pool <!-- MODIFY THIS HEADING -->
-From main Cognito page in the AWS console, Select Grant access to AWS services and then select Create identity pool
+From main Cognito page in the AWS console, Select _Grant access to AWS services_ and then select **Create identity pool**
 ![Identity Pool](/images/400-api_access-00.png)
 
-Select "Authenticated access" and "Amazon Cognito user pool". Click "Next"
+Select "_Authenticated access_" and "_Amazon Cognito user pool_". Click "**Next**"
 ![Identity Pool](/images/401-api_access-01.png)
 
-Select "Create a new IAM role", enter "cfj-01" in role name
+Select "_Create a new IAM role_", enter "_**cfj-01**_" in role name
 ![Identity Pool](/images/402-api_access-02.png)
 
 Select User pool and App Client that was created in Lab 2

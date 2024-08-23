@@ -41,11 +41,11 @@ const makeRequestWithToken = async () => {
   }
 ```
 
-You can now test invoking the API, after you sign-in with "Google" and get tokens from Cognito, click the Make API Request button.
+You can now test invoking the API, after you sign-in with "_**Google**_" and get tokens from Cognito, click the **Make API Request** button.
 ![Api Access](/images/350-api_access-14.png)
 
 Notice the access-token is added to the authorization header and the endpoint responds with the expected results:
 ![Api Access](/images/351-api_access-15.png)
 
-Currently, when you sign in by username/password, you will get error because in crendentials process, we does not process to request scope: cfj/read
+Currently, when you sign in by username/password, you will get error because in crendentials process, we does not process to request scope: _**cfj/read**_
 ![Api Access](/images/352-api_access-16.png)

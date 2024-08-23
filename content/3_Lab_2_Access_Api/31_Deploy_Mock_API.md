@@ -8,16 +8,16 @@ weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES
 In the AWS Console, in the unified search type API Gateway and click on the API Gateway Service icon.
 ![Api Access](/images/300-api_access-01.png)
 
-Select REST API by clicking Build
+Select **REST API** by clicking Build
 ![Api Access](/images/305-api_access-06.png)
 
-Then select Example API and click Create API.
+Then select Example API and click **Create API**.
 ![Api Access](/images/306-api_access-07.png)
 
 The Mock API and endpoints are ready
 ![Api Access](/images/307-api_access-08.png)
 
-configure Enable CORS
+configure **Enable CORS**
 ![Api Access](/images/312-api_access-12.png)
 
 And deploy. We will now define a stage, click the deployment stage combobox and select [New Stage]. Provide a Stage name*, for this example use Prod, then click deploy.

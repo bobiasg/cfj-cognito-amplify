@@ -25,7 +25,7 @@ npm install next-auth@beta
 
 ## Configure NextAuth
 
-Create auth secret, it will add AUTH_SECRET to .env.local
+Create auth secret, it will add **AUTH_SECRET** to _.env.local_
 
 `
 npx auth secret
@@ -57,11 +57,11 @@ export const {GET, POST} = handlers;
 
 ```
 
-As you can observe in the code snippet, all sensitive information is stored in an .env.local file. This practice is essential to prevent exposure of such details to the front-end users of our application. COGNITO_CLIENT_ID, COGNITO_CLIENT_SECRET get from App Client Setting in Cognito User Pool.
+As you can observe in the code snippet, all sensitive information is stored in an .env.local file. This practice is essential to prevent exposure of such details to the front-end users of our application. **COGNITO_CLIENT_ID**, **COGNITO_CLIENT_SECRET** get from App Client Setting in Cognito User Pool.
 
-First, go back to AWS -> Cognito and select "CFJ-01" pool.
+First, go back to AWS -> Cognito and select "_CFJ-01_" pool.
 
-Click on the App integration tab and scroll to the bottom. You will see the App client list. Great! Here, you should find your "cfj-client". Click on it. This is the place where you want to be:
+Click on the App integration tab and scroll to the bottom. You will see the App client list. Great! Here, you should find your "_cfj-client_". Click on it. This is the place where you want to be:
 ![NextApp](/images/80-nextjs-01.png)
 
 
@@ -150,7 +150,7 @@ export default async function Index() {
 ```
 
 {{% notice note %}}
-For make some styles on app, I add more components and library. I can access code at .......
+For make some styles on app, I add more components and library. you can access code at https://github.com/bobiasg/cfj-cognito
 {{% /notice %}}
 
 
@@ -177,7 +177,7 @@ Click "Sign In", and click "Sign in with Cognito", browser will be redirect to h
 But now, we got error by redirect missmatch.
 ![NextApp](/images/92-nextjs-12.png)
 
-Go to Hosted UI setting to update callback Url. Add new callback url: https://localhost:3000/api/auth/callback/cognito 
+Go to _Hosted UI_ setting to update callback Url. Add new callback url: https://localhost:3000/api/auth/callback/cognito 
 ![NextApp](/images/93-nextjs-13.png)
 
 We will access test app again at https://localhost:3000, click "Sign In", and click "Sign In with Cognito" to process authentication at Hosted UI site
