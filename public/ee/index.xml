@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Event Engine Setup</title>
-    <link>//localhost:1313/ee/</link>
+    <link>https://bobiasg.github.io/cfj-cognito-amplify/ee/</link>
     <description>Recent content on Event Engine Setup</description>
     <generator>Hugo</generator>
     <language>ee</language>
-    <atom:link href="//localhost:1313/ee/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bobiasg.github.io/cfj-cognito-amplify/ee/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

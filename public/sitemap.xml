@@ -2,12 +2,12 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>//localhost:1313/en/sitemap.xml</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/en/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>//localhost:1313/ee/sitemap.xml</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/ee/sitemap.xml</loc>
     
   </sitemap>
   

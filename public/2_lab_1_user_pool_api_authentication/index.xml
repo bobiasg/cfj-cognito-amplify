@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lab 1 - User Pool API Authentication on English</title>
-    <link>//localhost:1313/2_lab_1_user_pool_api_authentication.html</link>
+    <link>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication.html</link>
     <description>Recent content in Lab 1 - User Pool API Authentication on English</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:1313/2_lab_1_user_pool_api_authentication/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create Cognito User Pool</title>
-      <link>//localhost:1313/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</link>
+      <link>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</guid>
+      <guid>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</guid>
       <description>Create Cognito User Pool Log into the AWS Console. In the AWS Console, open Amazon Cognito . Then click “Create a user pool” in the top right Select “User name, Email” under Cognito user pool sign-in options and hit Next Select “No MFA” and hit Next Leave the defaults for Step 3 and hit Next&#xA;Set Send email with Cognito and hit Next Enter your User pool Name to “CFJ-01”, Check the Use the Cognito Hosted UI option You can specify a custom domain name for example auth.</description>
     </item>
     <item>
       <title>User Pool Configuration</title>
-      <link>//localhost:1313/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html</link>
+      <link>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html</guid>
+      <guid>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html</guid>
       <description>Resouce Server We are now ready to further configure our user pool, we will begin by adding a resource server. As this lab will grant access to a Mock API at this stage we will create the resource and scope that will provide authenticated access to the get method of the API.&#xA;Select the App Integration tab and click on Create resource server Next we will enter as above the Resource server name, server identifier and Scope name then select Create resource server.</description>
     </item>
     <item>
       <title>Explore OpenID Config and Hosted UI</title>
-      <link>//localhost:1313/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</link>
+      <link>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</guid>
+      <guid>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</guid>
       <description>OpenID Config Lets explore the published configuration and it’s format. This configuration follows a convention&#xA;https://cognito-idp.{region}.amazonaws.com/{userpoolid}/.well-known/openid-configuration&#xA;On the console, on the left menu click on General settings, here you will find the user pool id: Copy this to construct your OpenID config URL and open this in your browser. https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_3JmHkB1jl/.well-known/openid-configuration&#xA;Hosted UI Return to the AWS Console, Under the tab App integration click on cfj-client. From here click on View Hosted UI this will open a window/tab.</description>
     </item>
     <item>
       <title>Nextjs App With NextAuth</title>
-      <link>//localhost:1313/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html</link>
+      <link>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html</guid>
+      <guid>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html</guid>
       <description>Nextjs App With NextAuth Create NextJs App To get started, we first need to create a new Next.js project.&#xA;$ npx create-next-app@latest cfj-cognito&#xD;Now change into the new app directory &amp;amp; install some dependencies&#xA;npm install next-auth@beta&#xD;Configure NextAuth Create auth secret, it will add AUTH_SECRET to .env.local&#xA;npx auth secret&#xD;Create file auth.ts in folder libs, place the follwing content inside:&#xA;import NextAuth from &amp;#34;next-auth&amp;#34;; import CognitoProvider from &amp;#34;next-auth/providers/cognito&amp;#34;; export const { handlers, signIn, signOut, auth } = NextAuth({ // Configure one or more authentication providers providers: [ CognitoProvider({ clientId: process.</description>
     </item>
     <item>
       <title>Third Party Identity Provider</title>
-      <link>//localhost:1313/2_lab_1_user_pool_api_authentication/27_social_login.html</link>
+      <link>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/27_social_login.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2_lab_1_user_pool_api_authentication/27_social_login.html</guid>
+      <guid>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/27_social_login.html</guid>
       <description>Third Party Identity Provider Cognito user pools also allow you to set up social login for your users. This is very convenient in a world where most people have become accustomed to authentication via existing accounts such as Google, Facebook, Apple, etc. Source Image: https://awskarthik82.medium.com/how-to-integrate-aws-cognito-with-google-social-login-fd379ff644cc&#xA;Social login setup To add google for authentication, we need to create OAuth client ID in Google API console. Open browser to access https://console.cloud.google.com/, select a project or create new project if not exists, and select &amp;ldquo;API &amp;amp; Service&amp;rdquo; in overview of project.</description>
     </item>
   </channel>

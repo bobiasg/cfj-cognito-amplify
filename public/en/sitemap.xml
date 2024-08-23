@@ -2,80 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ee"
-                href="//localhost:1313/ee/"
+                href="https://bobiasg.github.io/cfj-cognito-amplify/ee/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/"
+                href="https://bobiasg.github.io/cfj-cognito-amplify/"
                 />
   </url><url>
-    <loc>//localhost:1313/4_lab_3_identity_pool/41_create_identity_pool.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</loc>
   </url><url>
-    <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/21_create_user_pool.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/41_create_identity_pool.html</loc>
   </url><url>
-    <loc>//localhost:1313/3_lab_2_access_api/31_deploy_mock_api.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/3_lab_2_access_api/31_deploy_mock_api.html</loc>
   </url><url>
-    <loc>//localhost:1313/1_moduleone.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone.html</loc>
   </url><url>
-    <loc>//localhost:1313/1_moduleone/11_introduction_cognito.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/11_introduction_cognito.html</loc>
   </url><url>
-    <loc>//localhost:1313/4_lab_3_identity_pool/42_access_s3_nextjs.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/42_access_s3_nextjs.html</loc>
   </url><url>
-    <loc>//localhost:1313/3_lab_2_access_api/32_create_cognito_authorizer.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/3_lab_2_access_api/32_create_cognito_authorizer.html</loc>
   </url><url>
-    <loc>//localhost:1313/2_lab_1_user_pool_api_authentication.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication.html</loc>
   </url><url>
-    <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/22_user_pool_configuration.html</loc>
   </url><url>
-    <loc>//localhost:1313/1_moduleone/12_why_use_cognito.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/12_why_use_cognito.html</loc>
   </url><url>
-    <loc>//localhost:1313/3_lab_2_access_api/33_access_api_nextjs.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/3_lab_2_access_api/33_access_api_nextjs.html</loc>
   </url><url>
-    <loc>//localhost:1313/4_lab_3_identity_pool/43_additional_claims.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool/43_additional_claims.html</loc>
   </url><url>
-    <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/23_explore_openid_hosted_ui.html</loc>
   </url><url>
-    <loc>//localhost:1313/1_moduleone/13_how_authentication_works.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/13_how_authentication_works.html</loc>
   </url><url>
-    <loc>//localhost:1313/3_lab_2_access_api.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/3_lab_2_access_api.html</loc>
   </url><url>
-    <loc>//localhost:1313/4_lab_3_identity_pool.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/4_lab_3_identity_pool.html</loc>
   </url><url>
-    <loc>//localhost:1313/1_moduleone/14_workshopprerequisites.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/1_moduleone/14_workshopprerequisites.html</loc>
   </url><url>
-    <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/25_restricting_api_access_.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html</loc>
   </url><url>
-    <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/26_create_nextjs_app.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/2_lab_1_user_pool_api_authentication/27_social_login.html</loc>
   </url><url>
-    <loc>//localhost:1313/2_lab_1_user_pool_api_authentication/27_social_login.html</loc>
-  </url><url>
-    <loc>//localhost:1313/categories.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/categories.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ee"
-                href="//localhost:1313/ee/categories.html"
+                href="https://bobiasg.github.io/cfj-cognito-amplify/ee/categories.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/categories.html"
+                href="https://bobiasg.github.io/cfj-cognito-amplify/categories.html"
                 />
   </url><url>
-    <loc>//localhost:1313/tags.html</loc>
+    <loc>https://bobiasg.github.io/cfj-cognito-amplify/tags.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ee"
-                href="//localhost:1313/ee/tags.html"
+                href="https://bobiasg.github.io/cfj-cognito-amplify/ee/tags.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/tags.html"
+                href="https://bobiasg.github.io/cfj-cognito-amplify/tags.html"
                 />
   </url>
 </urlset>
